@@ -4,9 +4,12 @@
 	$email    = "";
 	$lname="";
 	$telephone="";
-	$psw1="";
-	$psw2="";
-	$psw="";
+	$nic="";
+	$address="";
+	$date="";
+	$dob="";
+	$gender="";
+	$var="";
 
 	$db = mysqli_connect('localhost', 'root', '', 'vtc');
 
@@ -17,18 +20,14 @@
 		$lname=mysqli_real_escape_string($db,$_POST['lname']);
 		$email = mysqli_real_escape_string($db, $_POST['email']);
 		$telephone=mysqli_real_escape_string($db,$_POST['telephone']);
-		$psw1 = mysqli_real_escape_string($db, $_POST['psw1']);
-		$psw2 = mysqli_real_escape_string($db, $_POST['psw2']);
-		
-		if ($psw1==$psw2){
-			$psw = md5($psw);
-			$query = "INSERT INTO applicants (fname, lname,  telephone,email, psw)
-					  VALUES('$fname','$lname', '$telephone','$email','$psw')";
-			mysqli_query($db, $query);
-		}else{
-			echo "ERROR";
-			echo "<script type='text/javascript'>alert('Passwords don't match!')</script>";
+		$nic = mysqli_real_escape_string($db, $_POST['nic']);
+		$address = mysqli_real_escape_string($db, $_POST['address']);
+		$dob = mysqli_real_escape_string($db, $_POST['dob']);
+		$gender=mysqli_real_escape_string($db, $_POST['gender']);
+		$query = "INSERT INTO applications (fname, lname,  telephone,email, nic,address,dob,gender)
+					  VALUES('$fname','$lname', '$telephone','$email', '$nic','$address','$dob','$gender')";
+		mysqli_query($db, $query);
+		header("location:index.php");
 		}
-	}
 
 ?>

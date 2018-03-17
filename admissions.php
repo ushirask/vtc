@@ -7,7 +7,7 @@
 <div class="body2">
   <div class="main">
     <!-- content -->
-		<form style="border:1px solid #ccc" method ='POST'>
+		<form style="border:1px solid #ccc" method ='POST' >
 		  <div class="container">
 			 <h2 class="pad_bot1">Apply</h2>
 			<p>Please fill in this form to apply for the entrance examination.</p>
@@ -15,23 +15,37 @@
 
 			<label for="fname"><b>First Name</b></label><br>
 			<input type="text" placeholder="Enter First Name" name="fname" required><br>
+			
 			<label for="lname"><b>Last Name</b></label><br>
 			<input type="text" placeholder="Enter Last Name" name="lname" required><br>
+			
+			<label for="gender"><b>Gender</b></label><br>
+			<input type="radio" name="gender" value="0" checked> Male<br>
+			<input type="radio" name="gender" value="1"> Female<br><br>
+			
+			<label for="dob"><b>Date of Birth</b></label><br><br>
+			<input type="date" placeholder="Enter Date of Birth" name="dob" min="1975-01-01" max="2005-12-31" required><br><br>
+			
+			<label for="nic"><b>NIC number</b></label><br>
+			<input type="text" placeholder="Enter NIC number" name="nic" required><br>
+			
+			<label for="address"><b>Address</b></label><br>
+			<input type="text" placeholder="Enter Address" name="address" required><br>
+			
 			<label for="telephone"><b>Phone Number</b></label><br>
 			<input type="phonenumber" placeholder="Enter Phone Number" name="telephone" required><br>
+			
 			<label for="email"><b>Email</b></label><br>
 			<input type="email" placeholder="Enter Email" name="email" required><br>
-			<label for="psw1"><b>Password</b></label><br>
-			<input type="password" placeholder="Enter Password" name="psw1" required><br>
-			<label for="psw2"><b>Repeat Password</b></label><br>
-			<input type="password" placeholder="Repeat Password" name="psw2" required><br> 
+			
+			
 			
 
 			
 			<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
 			<div class="clearfix">
-			  <button type="submit" class="signupbtn" name="apply">Submit Application</button>
+			  <button type="submit" class="signupbtn" name="apply" >Submit Application</button>
 			</div>
 		  </div>
 		</form>
