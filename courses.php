@@ -11,56 +11,27 @@
         <div class="wrapper">
           <article class="col1">
             <div class="pad_left1">
-              <h2 class="pad_bot1">Basic Courses</h2>
+              <h2 class="pad_bot1">Gain Skills With Us</h2>
             </div>
             <div class="wrapper pad_bot1">
               <figure class="left marg_right1"><img src="images/page2_img1.jpg" alt=""></figure>
-              <p class="pad_bot1 pad_top2"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong></p>
-              <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint occaecat.</p>
+              <p class="pad_bot1 pad_top2"><strong>Wanting to gain qualifications to help you start your career?<br>Here's what we currently offer:</strong></p>
+              <p><Strong>Full-Time:</Strong> Twice per year. Classes are held 5 days weekly from 8.30 am to 2.30 pm except on holidays.<br><Strong>Part-Time:</Strong> Twice per year. Classes are held on Saturdays from 8.30 am to 5.00 pm(tutorials) and / with option 3 evenings per week from 3.30 pm to 5.30 pm(Projects etc). </p>
             </div>
             <div class="pad_left1">
               <div class="box2">
                 <div class="wrapper">
                   <div class="cols">
                     <ul class="list3">
-                      <li><a href="#">Sed ut perspiiatis unde omnis iste</a></li>
-                      <li><a href="#">Natus error sit volupatem accusantiu</a></li>
-                      <li><a href="#">Doloremque laudatium, totam rem</a></li>
-                      <li><a href="#">Aperiam, eaqueipsa quae ahillo</a></li>
-                    </ul>
-                  </div>
-                  <div class="cols pad_left2">
-                    <ul class="list3">
-                      <li><a href="#">Nemo enim ipsam volptatem quia</a></li>
-                      <li><a href="#">Voluptas sit aspernatur aut odit autgit</a></li>
-                      <li><a href="#">Sed quia consequuntur magni</a></li>
-                      <li><a href="#">Dolores eos qui ratione voluptatem</a></li>
+                      <li><a href="mechanical-technology.php">Mechanical Technology</a></li>
+                      <li><a href="electrical-electronic-technology.php">Electrical & Electronic Technology</a></li>
+                      <li><a href="construction-technology.php">Construction Technology</a></li>
+                      <li><a href="information-communication-technology.php">Information & Communications Technology</a></li>
+                      <li><a href="food-technology.php">Food Technology</a></li>
                     </ul>
                   </div>
                 </div>
-              </div>
-              <p><strong>At vero eos et accusamus et iusto odio</strong> dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupidi- tate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fugat harum quidem rerum facilis est et expedita distinctio. </p>
-            </div>
-            <a href="#" class="button"><span><span>Read More</span></span></a> </article>
-          <article class="col2 pad_left2">
-            <div class="pad_left1">
-              <h2>Special Courses</h2>
-            </div>
-            <ul class="list1 pad_bot1">
-              <li><a href="#">At vero eos et accusamus</a></li>
-              <li><a href="#">Dignissimos ducimus</a></li>
-              <li><a href="#">Blanditiis praesentium volupta</a></li>
-              <li><a href="#">Deleniti atque corrupti quos </a></li>
-            </ul>
-            <a href="#" class="button"><span><span>Read More</span></span></a>
-            <div class="pad_left1">
-              <h2 class="marg_top1">Evening Courses</h2>
-              <p><strong>Nemo ipsam voluptatem</strong><br>
-                Quia voluptas sit aspernatur aut odit aut fugit, seduia consequuntur magni dolores eos qui ratione. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.<br>
-                numquam eius modi tempora incidunt ut labore et dolore magnam.</p>
-            </div>
-            <a href="#" class="button"><span><span>Read More</span></span></a> </article>
-        </div>
+              </div>        
       </div>
     </section>
     <!-- content -->
