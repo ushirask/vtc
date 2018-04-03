@@ -1,4 +1,4 @@
- <!-- footer -->
+ <!-- footer 
     <footer>
       <div class="wrapper">
         <div class="pad1">

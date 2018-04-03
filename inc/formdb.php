@@ -26,7 +26,8 @@
 		$gender=mysqli_real_escape_string($db, $_POST['gender']);
 		$query = "INSERT INTO applications (fname, lname,  telephone,email, nic,address,dob,gender)
 					  VALUES('$fname','$lname', '$telephone','$email', '$nic','$address','$dob','$gender')";
-		mysqli_query($db, $query);
+		$var=mysqli_query($db, $query);
+		
 		header("location:index.php");
 		}
 

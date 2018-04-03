@@ -26,6 +26,7 @@
             <li><a href="programs.php">Programs</a></li>
             <li><a href="teachers.php">Teachers</a></li>
             <li><a href="admissions.php">Apply Now</a></li>
+			<li><a href="profile.php">My Profile</a></li>
             <li class="end"><a href="contacts.php">Contacts</a></li>
           </ul>
         </nav>

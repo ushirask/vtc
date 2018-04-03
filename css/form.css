@@ -1,7 +1,7 @@
 
 
 /* Full-width input fields */
-input[type=text], input[type=password],input[type=email],input[type=phonenumber],input[type=radio],input[type=date]{
+input[type=text], input[type=password],input[type=email],input[type=phonenumber],input[type=date]{
     width: 60%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -10,7 +10,7 @@ input[type=text], input[type=password],input[type=email],input[type=phonenumber]
     background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus,input[type=email]:focus ,input[type=phonenumber]:focus,input[type=radio]:focus,input[type=date]:focus{
+input[type=text]:focus, input[type=password]:focus,input[type=email]:focus ,input[type=phonenumber]:focus,input[type=date]:focus{
     background-color: #ddd;
     outline: none;
 }
@@ -39,7 +39,8 @@ button:hover {
 /* Extra styles for the cancel button */
 .cancelbtn {
     padding: 14px 20px;
-    background-color: #f44336;
+    background-color: grey;
+	color: blue;
 }
 
 /* Float cancel and signup buttons and add an equal width */
