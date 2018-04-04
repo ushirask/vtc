@@ -19,7 +19,8 @@
             </div>
             <ul class="list1">
 				<?php 
-					$sql1="SELECT courseid from student_courses where studentid='$user_check'";
+					$user=$_SESSION['login_user'];
+					$sql1="SELECT courseid from student_courses where studentid='$user'";
 					$result1=mysqli_query($db,$sql1);
 					while($row1 = mysqli_fetch_array($result1,MYSQLI_ASSOC)){
 						$course_id=$row1['courseid'];

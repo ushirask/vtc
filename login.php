@@ -6,7 +6,9 @@
 <?php
 	$db = mysqli_connect('localhost', 'root', '', 'vtc');
    session_start();
-   
+   if(isset($_SESSION['login_user'])){
+      header("location:profile.php");
+   }
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
       
@@ -26,30 +28,30 @@
          
          header("location: profile.php");
       }else {
-         $error = "Your Index Number or Password is invalid";
+         $_SESSION['error'] = "Your Index Number or Password is invalid";
+		 header("location: status.php?pop=yes");
       }
    }
 ?>
 <div class="body2">
   <div class="main">
     <!-- content -->
+	<article class="col1">
 		<form style="border:1px solid #ccc" method ='POST' >
 		  <div class="container">
 			 <h1 class="pad_bot1">Please log in to continue.</h1>
 			<hr>
-
-			
 			<input type="text" placeholder="Enter Index Number" name="uname" required>
 			
 			<input type="password" placeholder="Enter Password" name="password" required>
 			
 			
 			<div class="clearfix">
-			  <button type="submit" class="submitbtn" name="login" >Log in</button>
+			  <button type="submit" class="signupbtn" name="login" >Log in</button>
 			</div>
 		  </div>
 		</form>
-		
+	</article>	
     <!-- content -->
     <?php include('inc/footer.inc.php'); ?>
   </div>
