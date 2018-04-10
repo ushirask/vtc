@@ -23,11 +23,12 @@
                 <div class="wrapper">
                   <div class="cols">
                     <ul class="list3">
-                      <li><a href="mechanical-technology.php">Mechanical Technology</a></li>
-                      <li><a href="electrical-electronic-technology.php">Electrical & Electronic Technology</a></li>
-                      <li><a href="construction-technology.php">Construction Technology</a></li>
-                      <li><a href="information-communication-technology.php">Information & Communications Technology</a></li>
-                      <li><a href="food-technology.php">Food Technology</a></li>
+                      <li><a href="courses/mechanical-technology.php">Mechanical Technology</a></li>
+                      <li><a href="courses/electrical-electronic-technology.php">Electrical & Electronic Technology</a></li>
+                      <li><a href="courses/construction-technology.php">Construction Technology</a></li>
+                      <li><a href="courses/information-communication-technology.php">Information & Communications Technology</a></li>
+                      <li><a href="courses/food-technology.php">Food Technology</a></li>
+						  <li><a href="courses/automotive-technology.php">Automotive Technology</a></li>
                     </ul>
                   </div>
                 </div>
