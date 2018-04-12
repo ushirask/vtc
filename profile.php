@@ -49,7 +49,7 @@
             </div>
             <ul class="list1">
               <li><a href="profile_courses.php">My courses</a></li>
-              <li><a href="#">Exam results</a></li>
+              <li><a href="profile_exams.php">Exam results</a></li>
               <li><a href="#">Attendance</a></li>
               <li><a href="#">Apply for leave</a></li>
             </ul>

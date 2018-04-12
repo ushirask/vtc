@@ -33,7 +33,6 @@
 				<li><a href="<?php echo $link ?>"><?php echo $course_name ?></a></li>
 				<?php } ?>
             </ul>
-            
             <div class="pad_top2"> <a href="logout.php" class="button"><span><span>LOGOUT</span></span></a> </div>
           </article>
         </div>
