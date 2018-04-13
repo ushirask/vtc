@@ -20,8 +20,8 @@
 			<input type="text" placeholder="Enter Last Name" name="lname" required><br>
 			
 			<label for="gender"><b>Gender</b></label><br>
-			<input type="radio" name="gender" value="0" checked> Male<br>
-			<input type="radio" name="gender" value="1"> Female<br><br>
+			Male  <input type="radio" name="gender" value="0" checked> <br>
+			Female<input type="radio" name="gender" value="1"> <br>
 			
 			<label for="dob"><b>Date of Birth</b></label><br><br>
 			<input type="date" placeholder="Enter Date of Birth" name="dob" min="1975-01-01" max="2005-12-31" required><br><br>
