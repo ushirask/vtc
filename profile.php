@@ -58,11 +58,11 @@
             </div>
             <div class="wrapper"> <span class="date">27</span>
               <p class="pad_top2"><a href="#">April, 2011</a><br>
-                Sed utirspiciatis unde omnis iste natus error sit...</p>
+                Sed utirspiciatis unde omnis iste natus error sit..</p>
             </div>
             <div class="wrapper"> <span class="date">25</span>
               <p class="pad_top2"><a href="#">April, 2011</a><br>
-                Voluptatem accusan dolore mque laudantium...</p>
+                Voluptatem accusan dolore mque laudantium..</p>
             </div>
             <div class="pad_top2"> <a href="logout.php" class="button"><span><span>LOGOUT</span></span></a> </div>
           </article>
