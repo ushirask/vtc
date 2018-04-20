@@ -9,6 +9,7 @@
     <section id="content">
       <div class="box1">
         <div class="wrapper">
+          <article class="col1">
             <div class="pad_left1">
               <h2 class="pad_bot1">Gain Skills With Us</h2>
             </div>
@@ -20,19 +21,18 @@
             <div class="pad_left1">
               <div class="box2">
                 <div class="wrapper">
-                    <div class="marg_top2">
-                      <h2>Our Courses</h2>
-                    </div>
-                    <ul class="list1">
+                  <div class="cols">
+                    <ul class="list3">
                       <li><a href="courses/mechanical-technology.php">Mechanical Technology</a></li>
                       <li><a href="courses/electrical-electronic-technology.php">Electrical & Electronic Technology</a></li>
                       <li><a href="courses/construction-technology.php">Construction Technology</a></li>
                       <li><a href="courses/information-communication-technology.php">Information & Communications Technology</a></li>
                       <li><a href="courses/food-technology.php">Food Technology</a></li>
-						          <li><a href="courses/automotive-technology.php">Automotive Technology</a></li>
+						  <li><a href="courses/automotive-technology.php">Automotive Technology</a></li>
                     </ul>
+                  </div>
                 </div>
-              </div>
+              </div>        
       </div>
     </section>
     <!-- content -->
