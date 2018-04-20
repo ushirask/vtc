@@ -25,7 +25,7 @@
             <li><a href="/vtc/courses.php">Courses</a></li>
             <li><a href="/vtc/teachers.php">Teachers</a></li>
             <li><a href="/vtc/admissions.php">Apply Now</a></li>
-			<li><a href="/vtc/profile.php">My Profile</a></li>
+			      <li><a href="/vtc/profile.php">My Profile</a></li>
             <li class="end"><a href="/vtc/contacts.php">Contacts</a></li>
           </ul>
         </nav>
@@ -33,7 +33,7 @@
       <div class="wrapper">
         <h1><a href="/vtc" id="logo">Learn Center</a></h1>
       </div>
-      <div id="slogan"> CodeX Tech<span>center for vocational education</span> </div>
+      <div id="slogan"> CodeX Tech <span> Center for Vocational Education</span> </div>
     </header>
     <!-- / header -->
   </div>
