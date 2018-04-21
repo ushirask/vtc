@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect('localhost', 'root', '', 'lecturer');
+$conn = mysqli_connect('localhost', 'root', '', 'vtc');
 $id=$_SESSION['login_user'];
 $num=mysqli_real_escape_string($conn,$_POST['number']);
 $dfrom=mysqli_real_escape_string($conn,$_POST['from']);
