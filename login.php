@@ -12,7 +12,7 @@
 		 $usertype = $myusername[0];
 		  if($usertype === "L" ){
 					 header("location:lecturer-profile.php");
-		}else  if($usertype === "L" ){
+		}else  if($usertype === "S" ){
 					 header("location:profile.php");
 		 }else if($usertype === "A" ){
 					 header("location:sectionalHead-profile.php");
@@ -40,7 +40,7 @@
          $_SESSION['login_user'] = $myusername;
 				 if($usertype === "L" ){
 					 header("location:lecturer-profile.php");
-				 }else  if($usertype === "L" ){
+				 }else  if($usertype === "S" ){
 					 header("location:profile.php");
 				 }else if($usertype === "A" ){
 					 header("location:sectionalHead-profile.php");
