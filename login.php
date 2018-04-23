@@ -10,10 +10,14 @@
    if(isset($_SESSION['login_user'])){
 		 $myusername = $_SESSION['login_user'];
 		 $usertype = $myusername[0];
-		 if($usertype === "L" ){
-			 header("location:lecturer-profile.php");
-		 }else{
-			 header("location:profile.php");
+		  if($usertype === "L" ){
+					 header("location:lecturer-profile.php");
+		}else  if($usertype === "L" ){
+					 header("location:profile.php");
+		 }else if($usertype === "A" ){
+					 header("location:sectionalHead-profile.php");
+		 }else if($usertype === "P" ){
+					 header("location:principal-profile.php");
 		 }
 		}
 
@@ -24,7 +28,7 @@
       $mypassword = md5(mysqli_real_escape_string($db,$_POST['password']));
 			$usertype = $myusername[0];
 
-      $sql = "SELECT indexnumber FROM users WHERE indexnumber = '$myusername' AND password = '$mypassword' UNION SELECT indexnumber FROM lecturers WHERE indexnumber = '$myusername' AND password = '$mypassword'";
+      $sql = "SELECT indexnumber FROM users WHERE indexnumber = '$myusername' AND password = '$mypassword' UNION SELECT indexnumber FROM lecturers WHERE indexnumber = '$myusername' AND password = '$mypassword' UNION SELECT indexnumber FROM admin WHERE indexnumber = '$myusername' AND password = '$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
@@ -36,8 +40,12 @@
          $_SESSION['login_user'] = $myusername;
 				 if($usertype === "L" ){
 					 header("location:lecturer-profile.php");
-				 }else{
+				 }else  if($usertype === "L" ){
 					 header("location:profile.php");
+				 }else if($usertype === "A" ){
+					 header("location:sectionalHead-profile.php");
+				 }else if($usertype === "P" ){
+					 header("location:principal-profile.php");
 				 }
 			}
       else {

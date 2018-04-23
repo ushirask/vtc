@@ -23,7 +23,6 @@
           <ul id="menu">
             <li><a href="index.php">Home</a></li>
             <li><a href="courses.php">Courses</a></li>
-            <li><a href="teachers.php">Teachers</a></li>
             <li><a href="admissions.php">Apply Now</a></li>
 			<li><a href="profile.php">My Profile</a></li>
             <li class="end"><a href="contacts.php">Contacts</a></li>

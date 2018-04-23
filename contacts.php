@@ -33,13 +33,7 @@
               </form>
             </div>
           </article>
-          <article class="col2 pad_left2">
-            <div class="pad_left1">
-              <h2>Miscellaneous <span>Info</span></h2>
-              <p>Quia voluptas sit aspernatur aut odit aut fugit, seduia consequuntur magni dolores eos qui ratione. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.<br>
-                numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-            </div>
-          </article>
+          
         </div>
       </div>
     </section>

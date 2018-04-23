@@ -22,8 +22,8 @@
 
 				<label for="reason"><b>Reason</b></label><br>
 				<input type="text" value="<?php echo $reason; ?>" readonly><br>
-			  <button name= "approve" type="submit" class="signupbtn" name="apply" >Approve</button><br>
-			  <button name= "reject" type="submit" class="signupbtn" name="apply" >Reject</button>
+			  <button name= "approve" type="submit" class="signupbtn" name="apply" >Approve</button>
+			  <button name= "reject" type="submit" class="cancelbtn" name="apply" >Reject</button>
 			</div>
 		  </div>
 		</form>
