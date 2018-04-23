@@ -49,6 +49,11 @@ button:hover {
   width: 50%;
 }
 
+.sendbtn {
+  float: right;
+  width: 100px;
+}
+
 /* Add padding to container elements */
 .container {
     padding: 16px;

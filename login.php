@@ -10,7 +10,7 @@
    if(isset($_SESSION['login_user'])){
 		 $myusername = $_SESSION['login_user'];
 		 $usertype = $myusername[0];
-		  if($usertype === "L" ){
+		if($usertype === "L" ){
 					 header("location:lecturer-profile.php");
 		}else  if($usertype === "S" ){
 					 header("location:profile.php");

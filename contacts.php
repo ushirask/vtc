@@ -12,28 +12,28 @@
           <article class="col1">
             <div class="pad_left1">
               <h2>Contact Form</h2>
-              <form id="ContactForm" action="#">
+              <form id="ContactForm"  method ='POST' action="inc/contactdb.inc.php">
                 <div>
                   <div  class="wrapper"> <strong>Name:</strong>
                     <div class="bg">
-                      <input type="text" class="input" >
+                      <input type="text" class="input" name="name" required>
                     </div>
                   </div>
                   <div  class="wrapper"> <strong>Email:</strong>
                     <div class="bg">
-                      <input type="text" class="input" >
+                      <input type="text" class="input" name="email" required>
                     </div>
                   </div>
                   <div  class="textarea_box"> <strong>Message:</strong>
                     <div class="bg">
-                      <textarea name="textarea" cols="1" rows="1"></textarea>
+                      <textarea name="message" cols="1" rows="1"></textarea>
                     </div>
                   </div>
-                  <a href="#" class="button"><span><span>Send</span></span></a> <a href="#" class="button"><span><span>Clear</span></span></a> </div>
+                  <button name= type="submit" class="sendbtn" name="send" >Send</button> 
               </form>
             </div>
           </article>
-          
+
         </div>
       </div>
     </section>
