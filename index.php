@@ -7,7 +7,7 @@
   <div class="main">
     <!-- content -->
     <section id="content">
-      
+
       <div class="box1">
         <div class="wrapper">
           <article class="col1">
@@ -26,10 +26,10 @@
             <ul class="list1">
               <li><a href="login.php">My Profile</a></li>
               <li><a href="courses.php">Available Courses</a></li>
-              <li><a href="admissions.php">Application for new students</a></li>
-              <li><a href="contacts.php">Contact us</a></li>
+              <li><a href="admissions.php">Application for New Students</a></li>
+              <li><a href="contacts.php">Contact Us</a></li>
             </ul>
-            
+
           </article>
         </div>
       </div>
