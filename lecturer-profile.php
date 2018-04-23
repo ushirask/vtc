@@ -1,5 +1,13 @@
+<?php
+   include('session.php');
 
-   
+   $myusername = $_SESSION['login_user'];
+   $usertype = $myusername[0];
+   if($usertype === "S" ){
+     header("location:profile.php");
+   }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
