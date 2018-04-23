@@ -1,7 +1,13 @@
 <?php
    include('session.php');
+
+   $myusername = $_SESSION['login_user'];
+   $usertype = $myusername[0];
+   if($usertype === "L" ){
+     header("location:lecturer-profile.php");
+   }
 ?>
-   
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +24,7 @@
               <h2>Current Courses</h2>
             </div>
             <ul class="list1">
-				<?php 
+				<?php
 					$user=$_SESSION['login_user'];
 					$sql1="SELECT courseid from student_courses where studentid='$user'";
 					$result1=mysqli_query($db,$sql1);

@@ -1,12 +1,19 @@
 <?php
    include('session.php');
+
+   $myusername = $_SESSION['login_user'];
+   $usertype = $myusername[0];
+   if($usertype === "L" ){
+     header("location:lecturer-profile.php");
+   }
 ?>
-   
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>My Courses</title>
 <?php include('inc/header.inc.php'); ?>
+<link rel="stylesheet" type="text/css" href="css/courses.css">
 <div class="body2">
   <div class="main">
     <!-- content -->
@@ -38,7 +45,7 @@
 				<button type="submit" class="signupbtn" name="s6" ><Strong>Semester 6 </Strong></button><br>
 				</div>
 				</div>
-           </form> 
+           </form> <br>
 			<?php
 			$sem;
 			if (isset($_POST['s1'])) {
@@ -60,23 +67,25 @@
 				$sem= "s6";
 			}
 			if (isset($sem)){
+					echo "<table class='courses-table'><tr><td class='table-header'><Strong>Module</Strong></td><td class='table-header'><Strong>Grade</Strong></td></tr>";
 					$user=$_SESSION['login_user'];
 					$sql1="SELECT * from student_courses where studentid='$user'";
 					$result1=mysqli_query($db,$sql1);
-					echo '<table>';
 					while($row1 = mysqli_fetch_array($result1,MYSQLI_ASSOC)){
-							echo '<tr>';echo '<td>';
-							echo $row1['courseid'];echo '</td>';
-							echo '<td>';echo $row1[$sem];echo '</td>';
-							echo '</tr>';
-					}echo '</table>';
-			}			
+						$course_id=$row1['courseid'];
+						$sql2="SELECT * from courses where courseID='$course_id'";
+						$result2=mysqli_query($db,$sql2);
+						$row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC);
+						$course_name=$row2['name'];
+						echo "<tr><td><Strong>$course_name</Strong></td><td>$row1[$sem]</td></tr>" ;
+					}
+			}
 			?>
-            <div class="pad_top2"> <a href="logout.php" class="button"><span><span>LOGOUT</span></span></a> </div>
           </article>
         </div>
       </div>
     </section>
+	  <div ><a href="logout.php" class="button"><span><span>LOGOUT</span></span></a> </div>
     <!-- content -->
     <?php include('inc/footer.inc.php'); ?>
   </div>

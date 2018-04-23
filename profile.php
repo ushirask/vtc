@@ -1,7 +1,13 @@
 <?php
    include('session.php');
+
+   $myusername = $_SESSION['login_user'];
+   $usertype = $myusername[0];
+   if($usertype === "L" ){
+     header("location:lecturer-profile.php");
+   }
 ?>
-   
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,14 +20,17 @@
       <div class="wrapper">
         <div class="pad1 pad_top1">
           <article class="cols marg_right1">
-            <figure><a href="#"><img src="images/page1_img1.jpg" alt=""></a></figure>
-            <span class="font1">Our Mission Statement</span> </article>
+            <figure><a href="profile_courses.php"><img src="images/prof_img1.jpg" alt=""></a></figure>
+            <span class="font1"><a href="profile_courses.php">My Courses</a></span> </article>
           <article class="cols marg_right1">
-            <figure><a href="#"><img src="images/page1_img2.jpg" alt=""></a></figure>
-            <span class="font1">Performance Report</span> </article>
+            <figure><a href="profile_exams.php"><img src="images/prof_img2.jpg" alt=""></a></figure>
+            <span class="font1"><a href="profile_exams.php">Exam Results</a></span> </article>
           <article class="cols">
-            <figure><a href="#"><img src="images/page1_img3.jpg" alt=""></a></figure>
-            <span class="font1">Prospective Parents</span> </article>
+            <figure><a href="#"><img src="images/prof_img3.jpg" alt=""></a></figure>
+            <span class="font1"><a href="#">Attendance</a></span> </article>
+          <article class="cols">
+            <figure><a href="leaveapplication.php"><img src="images/prof_img4.jpg" alt=""></a></figure>
+            <span class="font1"><a href="leaveapplication.php">Apply for Leave</a></span> </article>
         </div>
       </div>
       <div class="box1">
@@ -58,11 +67,11 @@
             </div>
             <div class="wrapper"> <span class="date">27</span>
               <p class="pad_top2"><a href="#">April, 2011</a><br>
-                Sed utirspiciatis unde omnis iste natus error sit...</p>
+                Sed utirspiciatis unde omnis iste natus error sit..</p>
             </div>
             <div class="wrapper"> <span class="date">25</span>
               <p class="pad_top2"><a href="#">April, 2011</a><br>
-                Voluptatem accusan dolore mque laudantium...</p>
+                Voluptatem accusan dolore mque laudantium..</p>
             </div>
             <div class="pad_top2"> <a href="logout.php" class="button"><span><span>LOGOUT</span></span></a> </div>
           </article>
