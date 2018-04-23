@@ -1,5 +1,3 @@
-
-   
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,9 +44,7 @@
               <h2>New Programs</h2>
             </div>
             <ul class="list1">
-              <li><a href="profile_courses.php">My courses</a></li>
-              <li><a href="#">Exam results</a></li>
-              <li><a href="leave-application-list.php">Approve leave applications</a></li>
+              <li><a href='#'>My courses</a></li>
               <li><a href="leaveapplication-lecturer.php">Apply for leave</a></li>
             </ul>
             <div class="pad_left1">

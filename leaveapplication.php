@@ -14,9 +14,6 @@
 			<label for="course"><b>Course Name</b></label><br>
 			<input type="text" placeholder="Enter Course Name" name="course" required><br>
 
-			<label for="moduleCode"><b>Module Code</b></label><br>
-			<input type="text" placeholder="Enter Module Code" name="moduleCode" required><br>
-			
 			<label for="number"><b>Number of Days</b></label><br><br>
 			<input type="number" placeholder="Enter Number of days" name="number" required><br><br>
 			

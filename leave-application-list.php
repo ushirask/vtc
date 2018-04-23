@@ -7,16 +7,14 @@
 <div class="body2">
   <div class="main">
     <!-- content -->
-		<form style="border:1px solid #ccc" method ='POST' action="inc/approveleavelecturer.inc.php">
-		  <div class="container">
-			 <h2 class="pad_bot1">Leave Applications List</h2>
-			 <ul>
-			 	<?php
-			 	include('inc/leaveapplicationlist.inc.php');
-			 	?>
-			 </ul>
-		  </div>
-		</form>
+	  <div class="container">
+		 <h2 class="pad_bot1">Leave Applications List</h2>
+		 <ul>
+		 	<?php
+		 	include('inc/leaveapplicationlist.inc.php');
+		 	?>
+		 </ul>
+	  </div>
 		
     <!-- content -->
     <?php include('inc/footer.inc.php'); ?>
