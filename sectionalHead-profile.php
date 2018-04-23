@@ -1,13 +1,3 @@
-<?php
-   include('session.php');
-
-   $myusername = $_SESSION['login_user'];
-   $usertype = $myusername[0];
-   if($usertype === "S" ){
-     header("location:profile.php");
-   }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,8 +44,7 @@
               <h2>New Programs</h2>
             </div>
             <ul class="list1">
-              <li><a href='#'>My courses</a></li>
-              <li><a href="leaveapplication-lecturer.php">Apply for leave</a></li>
+              <li><a href="leave-application-list.php">Approve leave applications</a></li>
             </ul>
             <div class="pad_left1">
               <h2>Latest News</h2>
