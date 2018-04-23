@@ -21,6 +21,7 @@
 				<input type="date" value="<?php echo $dto ; ?>" name="to" min="2015-01-01" max="2035-12-31" ><br><br>
 
 				<label for="reason"><b>Reason</b></label><br>
+				<input type="text" value="<?php echo $reason; ?>" readonly><br>
 			  <button name= "approve" type="submit" class="signupbtn" name="apply" >Approve</button><br>
 			  <button name= "reject" type="submit" class="signupbtn" name="apply" >Reject</button>
 			</div>
