@@ -21,7 +21,7 @@
 			<input type="date" placeholder="Enter Starting Date of Period of Leave" name="from" min="2015-01-01" max="2035-12-31" required><br>
 
 			<label for="to"><b><t>  To</b></label><br>
-			<input type="date" placeholder="Enter Ending Date of Period of Leave" name="to" min="2015-01-01" max="2035-12-31" ><br><br>
+			<input type="date" placeholder="Enter Ending Date of Period of Leave" name="to" min="2015-01-01" max="2035-12-31" required><br><br>
 
 			<label for="reason"><b>Reason</b></label><br>
 			<input type="text" placeholder="Enter Reason" name="reason" required><br>

@@ -42,7 +42,7 @@
 			
 
 			
-			<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+			
 
 			<div class="clearfix">
 			  <button type="submit" class="signupbtn" name="apply" >Submit Application</button>
