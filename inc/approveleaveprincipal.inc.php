@@ -1,5 +1,5 @@
 <?php 
-$conn=mysqli_connect('localhost','root','','lecturer');
+$conn=mysqli_connect('localhost','root','','vtc');
 $lecid=$_GET['lecid'];
 if (isset($_POST['approve'])) {
 	$data="Approved";

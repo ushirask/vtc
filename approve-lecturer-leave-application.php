@@ -18,12 +18,12 @@
 				<input type="date" value="<?php echo $dfrom ; ?>" name="from" min="2015-01-01" max="2035-12-31" readonly><br>
 
 				<label for="to"><b><t>  To</b></label><br>
-				<input type="date" value="<?php echo $dto ; ?>" name="to" min="2015-01-01" max="2035-12-31" ><br><br>
+				<input type="date" value="<?php echo $dto ; ?>" name="to" min="2015-01-01" max="2035-12-31" readonly ><br><br>
 
 				<label for="reason"><b>Reason</b></label><br>
 				<input type="text" value="<?php echo $reason; ?>" readonly><br>
-			  <button name= "approve" type="submit" class="signupbtn" name="apply" >Approve</button><br>
-			  <button name= "reject" type="submit" class="signupbtn" name="apply" >Reject</button>
+			  <button name= "approve" type="submit" class="signupbtn" name="apply" >Approve</button>
+			  <button name= "reject" type="submit" class="cancelbtn" name="apply" >Reject</button>
 			</div>
 		  </div>
 		</form>

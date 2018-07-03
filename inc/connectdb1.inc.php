@@ -1,5 +1,5 @@
 <?php 
-$conn=mysqli_connect('localhost','root','','lecturer');
+$conn=mysqli_connect('localhost','root','','vtc');
 $lecid=$_GET['lid'];
 $sql="SELECT * FROM lecturer_leave WHERE id ='$lecid';";
 $result=mysqli_query($conn,$sql);
