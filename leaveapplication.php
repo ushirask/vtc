@@ -11,11 +11,9 @@
 			 <h2 class="pad_bot1">Apply For Leave </h2>
 			<p>Please fill in this form to apply for leave</p>
 			<hr>
-			<label for="course"><b>Course Name</b></label><br>
-			<input type="text" placeholder="Enter Course Name" name="course" required><br>
 
 			<label for="number"><b>Number of Days</b></label><br><br>
-			<input type="number" placeholder="Enter Number of days" name="number" required><br><br>
+			<input type="number" placeholder="Enter Number of days" name="number_days" required><br><br>
 			
 			<label for="from"><b>Period of leave<br><t>  From</b></label><br>
 			<input type="date" placeholder="Enter Starting Date of Period of Leave" name="from" min="2015-01-01" max="2035-12-31" required><br>

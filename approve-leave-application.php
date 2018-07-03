@@ -1,13 +1,11 @@
-</*?php
+<?php
    include('session.php');
 
    $myusername = $_SESSION['login_user'];
    $usertype = $myusername[0];
-   if($usertype === "S" ){
-     header("location:profile.php");
-   }else if($usertype === "S" ){
-     header("location:profile.php");
-   }*/
+   if($usertype !== "A"){
+     header("location:login.php");
+   }
 ?>
 
 <!DOCTYPE html>
@@ -23,8 +21,6 @@
 		  	<?php include('inc/connectdb.inc.php');?>
 			<div class="clearfix">
 				<form style="border:1px solid #ccc" method ='POST' action="inc/approveleavelecturer.inc.php?stuid=<?php echo $stuid;?> ">
-				<label for="course"><b>  Course Name</b></label><br>
-				<input type="text" value= "<?php echo $course; ?> " readonly><br>
 
 				<label for="number"><b>  Number of Days</b></label><br><br>
 				<input type="text" value="<?php echo $num; ?>" readonly><br><br>

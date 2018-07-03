@@ -3,13 +3,9 @@
 
    $myusername = $_SESSION['login_user'];
    $usertype = $myusername[0];
-   if($usertype === "L" ){
-					 header("location:lecturer-profile.php");
-		 }else if($usertype === "S" ){
-					 header("location:profile.php");
-		 }else if($usertype === "P" ){
-					 header("location:principal-profile.php");
-		 }
+   if($usertype !== "A" ){
+					 header("location:login.php");
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">

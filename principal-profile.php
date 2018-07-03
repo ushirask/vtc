@@ -4,12 +4,8 @@
    $myusername = $_SESSION['login_user'];
    $usertype = $myusername[0];
 	if($usertype === "L" ){
-					 header("location:lecturer-profile.php");
-		 }else if($usertype === "A" ){
-					 header("location:sectionalHead-profile.php");
-		 }else if($usertype === "S" ){
-					 header("location:profile.php");
-		 }
+					 header("location:login.php");
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,6 +26,9 @@
             </div>
             <ul class="list1">
               <li><a href="lecturer-leave-application-list.php">Approve leave applications</a></li>
+            </ul>
+			<ul class="list1">
+              <li><a href="application-list.php">Approve applications</a></li>
             </ul>
             
             <div class="pad_top2"> <a href="logout.php" class="button"><span><span>LOGOUT</span></span></a> </div>

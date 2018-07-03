@@ -10,14 +10,14 @@
    if(isset($_SESSION['login_user'])){
 		 $myusername = $_SESSION['login_user'];
 		 $usertype = $myusername[0];
-		  if($usertype === "L" ){
+		 if($usertype === "L" ){
 					 header("location:lecturer-profile.php");
-		}else  if($usertype === "S" ){
-					 header("location:profile.php");
 		 }else if($usertype === "A" ){
 					 header("location:sectionalHead-profile.php");
 		 }else if($usertype === "P" ){
 					 header("location:principal-profile.php");
+		 }else{
+					header("location:profile.php");
 		 }
 		}
 
@@ -40,13 +40,13 @@
          $_SESSION['login_user'] = $myusername;
 				 if($usertype === "L" ){
 					 header("location:lecturer-profile.php");
-				 }else  if($usertype === "S" ){
-					 header("location:profile.php");
-				 }else if($usertype === "A" ){
+				}else if($usertype === "A" ){
 					 header("location:sectionalHead-profile.php");
-				 }else if($usertype === "P" ){
+				}else if($usertype === "P" ){
 					 header("location:principal-profile.php");
-				 }
+				}else{
+					header("location:profile.php");
+		 }
 			}
       else {
          $_SESSION['error'] = "Your Index Number or Password is invalid";

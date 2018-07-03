@@ -38,12 +38,6 @@
 			<label for="email"><b>Email</b></label><br>
 			<input type="email" placeholder="Enter Email" name="email" required><br>
 			
-			
-			
-
-			
-			
-
 			<div class="clearfix">
 			  <button type="submit" class="signupbtn" name="apply" >Submit Application</button>
 			</div>
