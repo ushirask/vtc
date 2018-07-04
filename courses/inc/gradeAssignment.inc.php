@@ -8,5 +8,5 @@ if(isset($_POST['grade'])){
 	$sql="INSERT INTO student_assignments (graded_status, marks) VALUES (TRUE, '$marks');";
 	mysqli_query($conn, $sql);
 	$result=mysqli_query($conn,$sql);
-	header("Location: ../assignment_view.php?successfull");
+	header("Location: ../assignment_view.php?assignId=$assignId");
 }

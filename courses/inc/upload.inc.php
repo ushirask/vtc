@@ -1,5 +1,10 @@
 <?php
 if(isset($_POST['submit'])){
+	$conn=mysqli_connect('localhost','root','','vtc');
+	$sql="SELECT * FROM student_assignments WHERE assignment_id='$assignId' && student_id='$userType';";
+	$result=mysqli_query($conn,$sql);
+	$resultCheck=mysqli_num_rows($result);
+
 	$file=$_FILES['file'];
 	$fileName=$_FILES['file']['name'];
 	$fileTmpName=$_FILES['file']['tmp_name'];
@@ -15,7 +20,7 @@ if(isset($_POST['submit'])){
 	$student_id=$_SESSION['login_user'];
 	$course_id=$_GET['courseId'];
 
-	$conn=mysqli_connect('localhost','root','','vtc');
+
 	$sql="SELECT * FROM assignments WHERE assignment_id='$assignId';";
 	$result=mysqli_query($conn,$sql);
 	$assignments=array();
@@ -30,8 +35,13 @@ if(isset($_POST['submit'])){
 			$fileNameNew=uniqid('',true).".".$fileActualExt;
 			$fileDestination='../uploads/'.$fileNameNew;
 			move_uploaded_file($fileTmpName, $fileDestination);
-			$sql1="INSERT INTO student_assignments (student_id, course_id,assignment_id, assignment_name,week_id, assignment_material,graded_status) values('$student_id','$course_id','$assignId','$fileName','$weekId','$file',FALSE);";
-			$result=mysqli_query($conn,$sql1);
+			if($resultCheck==0){
+				$sql1="INSERT INTO student_assignments (student_id, course_id,assignment_id, assignment_name,week_id, assignment_material,graded_status) values('$student_id','$course_id','$assignId','$fileName','$weekId','$file',FALSE);";
+				$result=mysqli_query($conn,$sql1);
+			}else if($resultCheck >0){
+				$sql1="INSERT INTO student_assignments (assignment_name, assignment_material) values('$fileName','$file') where assignment_id='$assignId' && student_id='$student_id';";
+				$result=mysqli_query($conn,$sql1);
+			}
 			header("Location: ../profile_courses.php?successfull");
 		}else{
 			header("Location: ../profile_courses.php?FileSizeError");

@@ -24,13 +24,11 @@ session_start();?>
                 $weekId=$_GET['weekId'];
                 $course_id=$_GET['courseId'];
                 if($userType=='S'){
-                echo '<form action="inc/upload.inc.php?assignId=$assignId&weekId=$weekId&courseId=$course_id" method="POST" enctype="multipart/form-data">
-                  <input type="file" name="file">
-                  <button type="submit" name="submit">upload</button>
-                </form>';
+                  include('inc/assignment_view.inc.php');
+                
               }
               else if($userType=='L'){
-                include(inc/assignmentList.inc.php);
+                include('inc/assignmentList.inc.php');
                 
             } ?>
             </div>
