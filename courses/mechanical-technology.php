@@ -50,6 +50,7 @@
                 <li class="course-content">Fluid Mechanics</li>
                 <li class="course-content">Instrumentation and Measurement</li>
                 <li class="course-content">Calculus</li>
+              </ul>
                 
               
               
