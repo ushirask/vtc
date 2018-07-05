@@ -10,7 +10,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo "<ul>";
 	foreach ($assignments as $assignment) {
 		$student_id=$assignment['student_id'];
-		echo "<li><a href=\"../gradeAssignment.php?stuId=$student_id&assignId=$assignId\">$student_id</a></li>";
+		echo "<li><a href=\"gradeAssignment.php?stuId=$student_id&assignId=$assignId&weekId=$weekId&courseId=$course_id\">$student_id</a></li>";
 	}
 echo "</ul>";
 ?>
