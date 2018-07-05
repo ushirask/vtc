@@ -1,11 +1,5 @@
 <?php
-   include('session.php');
-
-   $myusername = $_SESSION['login_user'];
-   $usertype = $myusername[0];
-   if($usertype !== "A"){
-     header("location:login.php");
-   }
+   include('inc/sessionSectionalHead.inc.php');
 ?>
 
 <!DOCTYPE html>

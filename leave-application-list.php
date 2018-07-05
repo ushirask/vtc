@@ -1,8 +1,12 @@
+<?php
+   include('inc/sessionSectionalHead.inc.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Learn Center | Approve Leave Application</title>
-<?php include('inc/header.inc.php'); 
+<?php include('inc/header.inc.php');
 ?>
 <div class="body2">
   <div class="main">
@@ -15,7 +19,7 @@
 		 	?>
 		 </ul>
 	  </div>
-		
+
     <!-- content -->
     <?php include('inc/footer.inc.php'); ?>
   </div>
