@@ -43,6 +43,17 @@
                   <td class="table-course-objective" colspan="2">To gain knowledge, skills and competencies of a Machinist, e.g. to perform lathe operations, drilling, welding & allied operations, and grinding operations. Also to work with grind lathe tools and drill bits, to do basic workshop practice, and to perform milling operations.</td>
                 </tr>
               </table>
+              <ul class="list-course-content">
+                <li class="course-content-header"><Strong>Course Content</Strong></label>
+                <li class="course-content">Mechanics of Materials</li>
+                <li class="course-content">Thermodynamics</li>
+                <li class="course-content">Fluid Mechanics</li>
+                <li class="course-content">Instrumentation and Measurement</li>
+                <li class="course-content">Calculus</li>
+              </ul>
+                
+              
+              
 
             </div>
             </div>
