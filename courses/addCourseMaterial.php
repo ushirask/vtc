@@ -20,10 +20,10 @@ session_start();?>
               <?php
                 $weekId=$_GET['weekId'];
                 $course_id=$_GET['courseId'];
-                echo '<form action="inc/uploadCourseMaterial.inc.php?weekId=$weekId&courseId=$course_id" method="POST" enctype="multipart/form-data">
-                  <input type="file" name="file">
-                  <button type="submit" name="submit">upload</button>
-                </form>';
+                echo "<form method=\"POST\" action=\"inc/uploadCourseMaterial.inc.php?weekId=$weekId&courseId=$course_id\" enctype=\"multipart/form-data\">
+                  <input type=\"file\" name=\"file\">
+                  <button type=\"submit\" name=\"submit\">upload</button>
+                </form>";
                 ?>
             </div>
         </div>
