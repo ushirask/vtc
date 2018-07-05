@@ -24,10 +24,10 @@
               <h2><br></h2>
             </div>
             <ul class="list1">
-              <li><a href="login.php">My Profile</a></li>
+              <li><a href="login-page.php">My Profile</a></li>
               <li><a href="courses.php">Available Courses</a></li>
-              <li><a href="admissions.php">Application for New Students</a></li>
-              <li><a href="contacts.php">Contact Us</a></li>
+              <li><a href="admissions.php">Application for new students</a></li>
+              <li><a href="contacts.php">Contact us</a></li>
             </ul>
 
           </article>

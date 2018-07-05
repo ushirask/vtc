@@ -1,15 +1,5 @@
 <?php
-   include('session.php');
-
-   $myusername = $_SESSION['login_user'];
-   $usertype = $myusername[0];
-   if($usertype === "L" ){
-					 header("location:lecturer-profile.php");
-		 }else if($usertype === "A" ){
-					 header("location:sectionalHead-profile.php");
-		 }else if($usertype === "P" ){
-					 header("location:principal-profile.php");
-		 }
+   include('inc/sessionStudent.inc.php');
 ?>
 
 <!DOCTYPE html>
@@ -89,7 +79,7 @@
         </div>
       </div>
     </section>
-	  <div ><a href="logout.php" class="button"><span><span>LOGOUT</span></span></a> </div>
+	  <div ><a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
     <!-- content -->
     <?php include('inc/footer.inc.php'); ?>
   </div>
