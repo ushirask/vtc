@@ -30,7 +30,7 @@
         </nav>
       </div>
       <div class="wrapper">
-        <h1><a href="index.html" id="logo">Learn Center</a></h1>
+        <h1><a href="index.php" id="logo">Learn Center</a></h1>
       </div>
       <div id="slogan"> CodeX Tech<span>center for vocational education</span> </div>
     </header>
