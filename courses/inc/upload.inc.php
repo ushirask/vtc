@@ -42,12 +42,13 @@ if(isset($_POST['submit'])){
 				$sql1="INSERT INTO student_assignments (assignment_name, assignment_material) values('$fileName','$file') where assignment_id='$assignId' && student_id='$student_id';";
 				$result=mysqli_query($conn,$sql1);
 			}
-			header("Location: ../../profile_courses.php?successfull");
+			header("Location: ../profile_courses.php?successfull");
 		}else{
-			header("Location: ../../profile_courses.php?FileSizeError");
+			header("Location: ../profile_courses.php?FileSizeError");
 		}
 
 	}else{
-		header("Location: ../../profile_courses.php?error");
+		header("Location: ../profile_courses.php?error");
 	}
 }
+?>

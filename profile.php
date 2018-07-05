@@ -1,15 +1,5 @@
 <?php
-   include('session.php');
-
-   $myusername = $_SESSION['login_user'];
-   $usertype = $myusername[0];
-   if($usertype === "L" ){
-					 header("location:lecturer-profile.php");
-		 }else if($usertype === "A" ){
-					 header("location:sectionalHead-profile.php");
-		 }else if($usertype === "P" ){
-					 header("location:principal-profile.php");
-		 }
+   include('inc/sessionStudent.inc.php');
 ?>
 
 <!DOCTYPE html>
@@ -35,10 +25,10 @@
             <span class="font1"><a href="#">Attendance</a></span> </article>
           <article class="cols">
             <figure><a href="leaveapplication.php"><img src="images/prof_img4.jpg" alt=""></a></figure>
-            <span class="font1"><a href="leaveapplication.php">Apply for Leave</a></span> </article>
+            <span class="font1"><a href="leave-application.php">Apply for Leave</a></span> </article>
         </div>
       </div>
-       <div class="pad_top2"> <a href="logout.php" class="button"><span><span>LOGOUT</span></span></a> </div>
+       <div class="pad_top2"> <a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
     </section>
     <!-- content -->
     <?php include('inc/footer.inc.php'); ?>

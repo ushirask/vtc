@@ -1,3 +1,7 @@
+<?php
+   include('inc/sessionPrincipal.inc.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +17,7 @@
 				<form style="border:1px solid #ccc" method ='POST' action="inc/approveleaveprincipal.inc.php?lecid=<?php echo $lecid;?> ">
 				<label for="number"><b>Number of Days</b></label><br><br>
 				<input type="number" value="<?php echo $num ; ?>" readonly><br><br>
-				
+
 				<label for="from"><b>Period of leave<br><t>  From</b></label><br>
 				<input type="date" value="<?php echo $dfrom ; ?>" name="from" min="2015-01-01" max="2035-12-31" readonly><br>
 
@@ -27,7 +31,7 @@
 			</div>
 		  </div>
 		</form>
-		
+
     <!-- content -->
     <?php include('inc/footer.inc.php'); ?>
   </div>

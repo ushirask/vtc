@@ -1,3 +1,7 @@
+<?php
+   include('inc/sessionStudent.inc.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +18,7 @@
 
 			<label for="number"><b>Number of Days</b></label><br><br>
 			<input type="number" placeholder="Enter Number of days" name="number_days" required><br><br>
-			
+
 			<label for="from"><b>Period of leave<br><t>  From</b></label><br>
 			<input type="date" placeholder="Enter Starting Date of Period of Leave" name="from" min="2015-01-01" max="2035-12-31" required><br>
 
@@ -29,7 +33,7 @@
 			</div>
 		  </div>
 		</form>
-		
+
     <!-- content -->
     <?php include('inc/footer.inc.php'); ?>
   </div>

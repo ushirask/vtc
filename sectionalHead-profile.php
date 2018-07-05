@@ -1,12 +1,7 @@
 <?php
-   include('session.php');
-
-   $myusername = $_SESSION['login_user'];
-   $usertype = $myusername[0];
-   if($usertype !== "A" ){
-					 header("location:login.php");
-	}
+   include('inc/sessionSectionalHead.inc.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,9 +19,9 @@
             <ul class="list1">
               <li><a href="leave-application-list.php">Approve leave applications</a></li>
             </ul>
-           
-       
-            <div class="pad_top2"> <a href="logout.php" class="button"><span><span>LOGOUT</span></span></a> </div>
+
+
+            <div class="pad_top2"> <a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
           </article>
         </div>
       </div>

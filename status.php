@@ -1,5 +1,3 @@
-
-   
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +9,10 @@
     <section id="content">
       <div class="box1">
             <div class="pad_left1">
-              <h2><?php 
+              <h2><?php
 							session_start();
 							echo $_SESSION['error'] ; ?></h2>
-            </div>           
+            </div>
 			<div class="pad_top2"> <a href="javascript:history.go(-1)" class="button"><span><span>Go Back</span></span></a> </div>
       </div>
     </section>

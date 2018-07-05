@@ -11,3 +11,4 @@ while($row=mysqli_fetch_assoc($result)){
 	$assignmentAray[]=$row;
 }
 $material=$assignmentAray['assignment_material'];
+?>
