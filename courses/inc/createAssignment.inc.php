@@ -16,3 +16,4 @@ mysqli_query($conn, $sql);
 $result=mysqli_query($conn,$sql);
 header("Location: ../../lecturer-profile.php?successfull");
 }
+?>

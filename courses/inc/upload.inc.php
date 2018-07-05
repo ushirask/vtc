@@ -51,3 +51,4 @@ if(isset($_POST['submit'])){
 		header("Location: ../profile_courses.php?error");
 	}
 }
+?>
