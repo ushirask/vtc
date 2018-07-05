@@ -1,16 +1,7 @@
 <?php
-   include('session.php');
-
-   $myusername = $_SESSION['login_user'];
-   $usertype = $myusername[0];
-	if($usertype === "L" ){
-					 header("location:lecturer-profile.php");
-		 }else if($usertype === "A" ){
-					 header("location:sectionalHead-profile.php");
-		 }else if($usertype === "S" ){
-					 header("location:profile.php");
-		 }
+   include('inc/sessionPrincipal.inc.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,13 +17,16 @@
           <article class="col2 pad_left2">
             <div class="pad_left1">
               <h2><br></h2>
-			  
+
             </div>
             <ul class="list1">
-              <li><a href="lecturer-leave-application-list.php">Approve leave applications</a></li>
+              <li><a href="lecturer-leave-application-list.php">Approve Leave Applications</a></li>
             </ul>
-            
-            <div class="pad_top2"> <a href="logout.php" class="button"><span><span>LOGOUT</span></span></a> </div>
+			<ul class="list1">
+              <li><a href="application-list.php">Approve Applications</a></li>
+            </ul>
+
+            <div class="pad_top2"> <a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
           </article>
         </div>
       </div>

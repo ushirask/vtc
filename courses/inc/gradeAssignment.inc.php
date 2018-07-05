@@ -12,3 +12,4 @@ if(isset($_POST['grade'])){
 	$result=mysqli_query($conn,$sql);
 	header("Location: ../assignment_view.php?assignId=$assignId&courseId=$courseId&weekId=$weekId");
 }
+

@@ -43,12 +43,13 @@ if(isset($_POST['submit'])){
 				$sql2="UPDATE student_assignments SET assignment_name='$fileName', assignment_path='$fileNameNew' where assignment_id='$assignId' && student_id='$student_id';";
 				$result=mysqli_query($conn,$sql2);
 			}
-			header("Location: ../../profile_courses.php?successfull");
+			header("Location: ../profile_courses.php?successfull");
 		}else{
-			header("Location: ../../profile_courses.php?FileSizeError");
+			header("Location: ../profile_courses.php?FileSizeError");
 		}
 
 	}else{
-		header("Location: ../../profile_courses.php?error");
+		header("Location: ../profile_courses.php?error");
 	}
 }
+?>

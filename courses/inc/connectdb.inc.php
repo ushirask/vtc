@@ -16,3 +16,6 @@ while($row=mysqli_fetch_assoc($result)){
 foreach ($assignmentArray as $assignment) {
 	$materialPath=$assignment['assignment_path'];
 }
+$material=$assignmentAray['assignment_material'];
+?>
+

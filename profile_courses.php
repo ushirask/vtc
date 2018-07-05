@@ -1,14 +1,5 @@
 <?php
-   include('session.php');
-
-   $myusername = $_SESSION['login_user'];
-   $usertype = $myusername[0];
-					 
-		 if($usertype === "A" ){
-					 header("location:sectionalHead-profile.php");
-		 }else if($usertype === "P" ){
-					 header("location:principal-profile.php");
-		 }
+   include('inc/sessionStudent.inc.php');
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +28,7 @@
                 $course_id=$row1['courseID'];
                 $course_name=$row1['name'];
                 echo "<li><a href=\"courses/courses_view.php?id=$course_id\">$course_name</a></li>";
-               } 
+               }
             echo '</ul>';
           }
           else if($userType=='S'){
@@ -54,8 +45,8 @@
             }
               echo '</ul>';
           } ?>
-				
-            <div class="pad_top2"> <a href="logout.php" class="button"><span><span>LOGOUT</span></span></a> </div>
+
+            <div class="pad_top2"> <a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
           </article>
         </div>
       </div>

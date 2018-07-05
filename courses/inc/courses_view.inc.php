@@ -26,10 +26,9 @@ for($i=0; $i<14; $i++){
 
 $sql="SELECT * FROM assignments WHERE course_id='$id';";
 $result=mysqli_query($conn,$sql);
-
-$assignmentArray=array();
+$assigmentArray=array();
 while($row=mysqli_fetch_assoc($result)){
-	$assignmentArray[]=$row;
+	$assigmentArray[]=$row;
 }
 
 for($i=0; $i<14; $i++){
@@ -45,14 +44,9 @@ for($i=0; $i<14; $i++){
 	$sql1='SELECT assignment_id FROM assignments WHERE week_id="$i";';
 	$result1=mysqli_query($conn, $sql1);
 	$resultCheck=mysqli_num_rows($result1);
-	if($resultCheck>0){
-		$resultCheck=$resultCheck+1;
-	}
 	if($usertype === "L" ){ 
 		echo "<li><a href=\"CreateItems.php?weekId=$i&assignId=$resultCheck&courseId=$id\">Create</a></li>";
 	}
 	echo "</ul>";
 }
-
-
 ?>

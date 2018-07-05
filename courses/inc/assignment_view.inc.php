@@ -52,7 +52,7 @@ else if($resultCheck>0){
 	  <button type=\"submit\" name=\"submit\">Edit submission</button>
 	</form>";
 }
-
+?>
 
 
 

@@ -9,8 +9,7 @@ while($row=mysqli_fetch_assoc($result)){
 }
 foreach ($applicationArray as $application) {
 	$stuid=$application['indexnumber'];
-	$course=$application['course'];
-	$num=$application['num'];
+	$num=$application['num_days'];
 	$dfrom=$application['dfrom'];
 	$dto=$application['dto'];
 	$reason=$application['reason'] ;

@@ -13,3 +13,4 @@ echo "<ul>";
 		echo "<li><a href=\"gradeAssignment.php?stuId=$student_id&assignId=$assignId&weekId=$weekId&courseId=$course_id\">$student_id</a></li>";
 	}
 echo "</ul>";
+?>

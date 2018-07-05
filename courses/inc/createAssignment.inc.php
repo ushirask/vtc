@@ -15,3 +15,4 @@ $sql="INSERT INTO assignments(assignment_id, week_id, lecturer_id, name, attachm
 mysqli_query($conn, $sql);
 header("Location: ../../lecturer-profile.php?successfull");
 }
+?>
