@@ -25,13 +25,13 @@ if(isset($_POST['submit'])){
 			$conn=mysqli_connect('localhost','root','','vtc');
 			$sql1="INSERT INTO course_material (lecturer_id, course_id, material_name,week_id, material) values('$lecturer_id','$course_id','$fileName','$weekId','$file');";
 			$result=mysqli_query($conn,$sql1);
-			header("Location: ../profile_courses.php?successfull");
+			header("Location: ../../profile_courses.php?successfull");
 		}else{
-			header("Location: ../profile_courses.php?FileSizeError");
+			header("Location: ../../profile_courses.php?FileSizeError");
 		}
 
 	}else{
 		echo "$fileError";
-		header("Location: ../profile_courses.php?error");
+		header("Location: ../../profile_courses.php?error");
 	}
 }
