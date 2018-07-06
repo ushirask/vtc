@@ -3,7 +3,7 @@
 <head>
 <title>Learn Center | Courses</title>
 <?php include('../inc/header.inc.php'); 
-session_start();?>
+?>
 <link rel="stylesheet" type="text/css" href="../css/courses.css">
 <div class="body2">
   <div class="main">
@@ -18,15 +18,14 @@ session_start();?>
             <div class="wrapper pad_bot1">
               
               <?php
-                include(inc/connectdb.inc.php);
-               
-                echo '<form method="POST" action="inc/gradeAssignment.inc.php?assignId=$assignId&stuId=$student_id">
-                  <input type="file" name="file" value="$material">
-                  Marks: <input type="int" name="marks">
-                  <button type="submit" name="grade">Grade</button>
-                </form>';
+                include('inc/connectdb.inc.php');
                 
-            }
+                echo "<form method=\"POST\" action=\"inc/gradeAssignment.inc.php?assignId=$assignId&stuId=$student_id&weekId=$weekId&courseId=$courseId\">
+                  <a href=\"uploads/$materialPath\">$student_id</a>
+                  Marks: <input type=\"int\" name=\"marks\">
+                  <button type=\"submit\" name=\"grade\">Grade</button>
+                </form>";
+              ?>
             </div>
         </div>
       </div>

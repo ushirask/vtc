@@ -11,9 +11,8 @@ $lecturerId=$_SESSION['login_user'];
 $assignmentId=$__GET['assignId'];
 $weekId=$_GET['weekId'];
 $conn=mysqli_connect('localhost','root','','vtc');
-$sql="INSERT INTO assignments (assignment_id, week_id, lecture_id,name,attachment_no,attachment_size, attachment_type, status, deadline) VALUES ('$assignId', '$weekId',$assignmentName',  '$number', '$maxSize', '$type', '$gradedStatus','$deadline');";
+$sql="INSERT INTO assignments(assignment_id, week_id, lecturer_id, name, attachment_no, attachment_size, attachment_type, status, deadline) VALUES('$assignId', '$weekId','$lecturerId','$assignmentName',  '$number', '$maxSize', '$type', '$gradedStatus','$deadline');";
 mysqli_query($conn, $sql);
-$result=mysqli_query($conn,$sql);
 header("Location: ../../lecturer-profile.php?successfull");
 }
 ?>

@@ -9,7 +9,6 @@
 				 header("location:sectionalHead-profile.php");
 	 }else if($usertype === "P" ){
 				 header("location:principal-profile.php");
-   }else if($usertype !== "S" ){
-				 header("location:login-page.php");
    }
+   
 ?>

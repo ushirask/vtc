@@ -19,18 +19,19 @@ session_start();?>
               
               <?php
                 $myusername = $_SESSION['login_user'];
-                $usertype = $myusername[0];
+                $userType = $myusername[0];
                 $assignId=$_GET['assignId'];
                 $weekId=$_GET['weekId'];
                 $course_id=$_GET['courseId'];
                 if($userType=='S'){
                   include('inc/assignment_view.inc.php');
                 
-              }
+                }
               else if($userType=='L'){
                 include('inc/assignmentList.inc.php');
                 
-            } ?>
+              } 
+            ?>
             </div>
         </div>
       </div>
