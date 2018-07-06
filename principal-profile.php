@@ -11,25 +11,18 @@
   <div class="main">
     <!-- content -->
     <section id="content">
-      <div class="box1">
-        <div class="wrapper">
-		<div class="pad_top2"> <span><span><h3>Welcome <?php echo $_SESSION['login_user'] ?></h3></span></span></a> </div>
-          <article class="col2 pad_left2">
-            <div class="pad_left1">
-              <h2><br></h2>
-
-            </div>
-            <ul class="list1">
-              <li><a href="lecturer-leave-application-list.php">Approve Leave Applications</a></li>
-            </ul>
-			<ul class="list1">
-              <li><a href="application-list.php">Approve Applications</a></li>
-            </ul>
-
-            <div class="pad_top2"> <a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
-          </article>
+      <div class="wrapper">
+       <div class="pad_top2"> <span><span><h3>Welcome <?php echo $_SESSION['login_user'] ?></h3></span></span></a> </div>
+        <div class="pad1 pad_top1">
+          <article class="cols marg_right1">
+            <figure><a href="lecturer-leave-application-list.php"><img src="images/prof_img4.jpg" alt=""></a></figure>
+            <span class="font1"><a href="lecturer-leave-application-list.php">Approve Leave Applications</a></span> </article>
+          <article class="cols">
+            <figure><a href="application-list.php"><img src="images/prof_img3.jpg" alt=""></a></figure>
+            <span class="font1"><a href="application-list.php">Approve Applications</a></span> </article>
         </div>
       </div>
+       <div class="pad_top2"> <a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
     </section>
     <!-- content -->
     <?php include('inc/footer.inc.php'); ?>

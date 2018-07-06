@@ -19,7 +19,7 @@
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
 
-      $myusername = mysqli_real_escape_string($db,$_POST['uname']);
+      $myusername = ucwords(mysqli_real_escape_string($db,$_POST['uname']));
       $mypassword = md5(mysqli_real_escape_string($db,$_POST['password']));
 			$usertype = $myusername[0];
 

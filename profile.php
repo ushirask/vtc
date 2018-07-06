@@ -24,7 +24,7 @@
             <figure><a href="#"><img src="images/prof_img3.jpg" alt=""></a></figure>
             <span class="font1"><a href="#">Attendance</a></span> </article>
           <article class="cols">
-            <figure><a href="leaveapplication.php"><img src="images/prof_img4.jpg" alt=""></a></figure>
+            <figure><a href="leave-application.php"><img src="images/prof_img4.jpg" alt=""></a></figure>
             <span class="font1"><a href="leave-application.php">Apply for Leave</a></span> </article>
         </div>
       </div>
