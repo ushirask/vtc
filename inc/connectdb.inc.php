@@ -1,4 +1,4 @@
-<?php 
+<?php
 $conn=mysqli_connect('localhost','root','','vtc');
 $sid=$_GET['sid'];
 $sql="SELECT * FROM student_leave WHERE indexnumber='$sid';";
@@ -13,5 +13,4 @@ foreach ($applicationArray as $application) {
 	$dfrom=$application['dfrom'];
 	$dto=$application['dto'];
 	$reason=$application['reason'] ;
-
 }

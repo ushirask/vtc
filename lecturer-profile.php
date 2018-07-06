@@ -12,19 +12,17 @@
     <!-- content -->
     <section id="content">
       <div class="wrapper">
-        <div class="pad1 pad_top1">
-
        <div class="pad_top2"> <span><span><h3>Welcome <?php echo $_SESSION['login_user'] ?></h3></span></span></a> </div>
-	   <br>
-            <ul class="list1">
-              <li><a href='#'>My courses</a></li>
-              <li><a href="leave-application-lecturer.php">Apply for leave</a></li>
-            </ul>
-
-            <div class="pad_top2"> <a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
-          </article>
+        <div class="pad1 pad_top1">
+          <article class="cols marg_right1">
+            <figure><a href='#'><img src="images/prof_img1.jpg" alt=""></a></figure>
+            <span class="font1"><a href='#'>My Courses</a></span> </article>
+          <article class="cols">
+            <figure><a href="leave-application-lecturer.php"><img src="images/prof_img4.jpg" alt=""></a></figure>
+            <span class="font1"><a href="leave-application-lecturer.php">Apply for Leave</a></span> </article>
         </div>
       </div>
+       <div class="pad_top2"> <a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
     </section>
     <!-- content -->
     <?php include('inc/footer.inc.php'); ?>

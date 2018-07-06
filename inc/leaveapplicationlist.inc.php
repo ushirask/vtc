@@ -1,12 +1,12 @@
 <?php
-session_start();
 
 $conn=mysqli_connect('localhost','root','','vtc');
 $sql="SELECT * FROM student_leave where sectionalHeadApproval='awaiting';";
 
 $result=mysqli_query($conn,$sql);
 $studentIDarray=array();
-while($row=mysqli_fetch_assoc($result)){ 
+
+while($row=mysqli_fetch_assoc($result)){
 $studentIDarray[]=$row;
 }
 
@@ -14,7 +14,3 @@ foreach($studentIDarray as $studentid){
 	$y=$studentid['indexnumber'];
 	echo "<li><a href=\"approve-leave-application.php?sid=$y\">$y</a></li>";
 }
-	
-
-
-
