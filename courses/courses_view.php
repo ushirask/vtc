@@ -16,7 +16,7 @@ session_start();?>
               <h2></h2>
             </div>
             <div class="wrapper pad_bot1">
-              <table class="courses-table">
+              <div class="container"></div>
                 <?php 
                   $id=$_GET['id'];
                   include('inc/courses_view.inc.php');                   

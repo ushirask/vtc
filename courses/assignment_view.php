@@ -4,7 +4,7 @@
 <title>Learn Center | Courses</title>
 <?php include('../inc/header.inc.php'); 
 session_start();?>
-<link rel="stylesheet" type="text/css" href="../css/courses.css">
+<link rel="stylesheet" type="text/css" href="css/courses.css">
 <div class="body2">
   <div class="main">
     <!-- content -->
@@ -13,15 +13,13 @@ session_start();?>
         <div class="wrapper">
           <article class="col1">
             <div class="pad_left1">
-              <h2></h2>
+              <h2>Submission View</h2>
             </div>
             <div class="wrapper pad_bot1">
-              
               <?php
                 $myusername = $_SESSION['login_user'];
                 $userType = $myusername[0];
                 $assignId=$_GET['assignId'];
-                $weekId=$_GET['weekId'];
                 $course_id=$_GET['courseId'];
                 if($userType=='S'){
                   include('inc/assignment_view.inc.php');
@@ -32,7 +30,7 @@ session_start();?>
                 
               } 
             ?>
-            </div>
+          </div>
         </div>
       </div>
     </section>
