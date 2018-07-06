@@ -1,5 +1,4 @@
 <?php
-session_start();
 $conn=mysqli_connect('localhost','root','','vtc');
 $sql="SELECT * FROM lecturer_leave where principalApproval='awaiting';";
 $result=mysqli_query($conn,$sql);

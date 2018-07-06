@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 $conn=mysqli_connect('localhost','root','','vtc');
 $sql="SELECT * FROM student_leave where sectionalHeadApproval='awaiting';";
