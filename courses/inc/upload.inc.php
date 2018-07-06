@@ -4,6 +4,8 @@ if(isset($_POST['submit'])){
 	$conn=mysqli_connect('localhost','root','','vtc');
 	$sql="SELECT * FROM student_assignments WHERE assignment_id='$assignId' && student_id='$myusername';";
 	$result=mysqli_query($conn,$sql);
+	$assignmentsArray=array();
+	
 	$resultCheck=mysqli_num_rows($result);
 
 	$file=$_FILES['file'];
@@ -18,38 +20,40 @@ if(isset($_POST['submit'])){
 	$file=base64_encode($file);
 
 	$assignId=$_GET['assignId'];
-	$weekId=$_GET['weekId'];
 	$student_id=$_SESSION['login_user'];
 	$course_id=$_GET['courseId'];
 
-	$sql="SELECT * FROM assignments WHERE assignment_id='$assignId';";
-	$result=mysqli_query($conn,$sql);
+	$sql1="SELECT * FROM assignments WHERE assignment_id='$assignId';";
+	$result1=mysqli_query($conn,$sql);
 	$assignments=array();
-	while($row=mysqli_fetch_assoc($result)){
-		$assignments[]=$row;
+	while($row1=mysqli_fetch_assoc($result1)){
+		$assignments[]=$row1;
 	}
-	if($assignments['type']=='all'){
-		$allowedExtension=array('jpg','jpeg','');
-	}
+	
 	if($fileError===0){
 		if($fileSize<=30000000){
 			$fileNameNew=uniqid('',true).".".$fileActualExt;
 			$fileDestination='../uploads/'.$fileNameNew;
 			move_uploaded_file($fileTmpName, $fileDestination);
 			if($resultCheck==0){
-				$sql1="INSERT INTO student_assignments(student_id, course_id, assignment_id, assignment_name, week_id,assignment_path) VALUES('$student_id','$course_id','$assignId','$fileName','$weekId','$fileNameNew');";
-				$result=mysqli_query($conn,$sql1);
+				$sql2="INSERT INTO student_assignments(student_id, course_id, assignment_id, assignment_name, assignment_path) VALUES('$student_id','$course_id','$assignId','$fileName','$fileNameNew');";
+				mysqli_query($conn,$sql2);
 			}else if($resultCheck >0){
-				$sql2="UPDATE student_assignments SET assignment_name='$fileName', assignment_path='$fileNameNew' where assignment_id='$assignId' && student_id='$student_id';";
-				$result=mysqli_query($conn,$sql2);
+				while($row=mysqli_fetch_assoc($result)){
+					$assignmentsArray[]=$row;
+				}
+				foreach ($assignmentsArray as $assign) {
+					$entry=$assign['entry'];
+				}
+				$sql3="UPDATE student_assignments SET assignment_name='$fileName', assignment_path='$fileNameNew' where entry='$entry';";
+				mysqli_query($conn,$sql3);
 			}
-			header("Location: ../profile_courses.php?successfull");
+			header("Location: ../../profile_courses.php?successfull");
 		}else{
-			header("Location: ../profile_courses.php?FileSizeError");
+			header("Location: ../../profile_courses.php?FileSizeError");
 		}
 
 	}else{
-		header("Location: ../profile_courses.php?error");
+		header("Location: ../../profile_courses.php?error");
 	}
 }
-?>
