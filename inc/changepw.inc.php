@@ -19,16 +19,16 @@
       // If result matched $myusername and $mypassword, table row must be 1 row
 
       if($count==1) {
-         $sql1="UPDATE users SET password = '$newpw' WHERE indexnumber='$uname' ";
-		 mysqli_query($conn,$sql1);
+         $sql1="UPDATE users SET password = '$newpw' WHERE indexnumber='$uname'; ";
+		 mysqli_query($db,$sql1);
 		 session_start();
-		 $_SESSION['error'] = "Password Successfully changed";
+		 $_SESSION['error'] = "Password successfully changed";
 		 header("location:status.php?pop=yes");
 	  }
       else {
 		  session_start();
          $_SESSION['error'] ="Your old password was incorrect";
-		 header("location:status.php?pop=$uname");
+		 header("location:status.php?pop=yes");
       }
    }
 ?>
