@@ -3,11 +3,10 @@
 
    $myusername = $_SESSION['login_user'];
    $usertype = $myusername[0];
-   if($usertype !== "L" ){
+   if($usertype !== "A" ){
 					 header("location:login.php");
 	}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,15 +17,15 @@
     <!-- content -->
     <section id="content">
       <div class="wrapper">
-        <div class="pad1 pad_top1">
-     
-       <div class="pad_top2"> <span><span><h3>Welcome <?php echo $_SESSION['login_user'] ?></h3></span></span></a> </div>
-	   <br>
+        <div class="pad_top2"> <span><span><h3>Welcome <?php echo $_SESSION['login_user'] ?></h3></span></span></a> </div>
+          <article class="col2 pad_left2">
+            <div class="pad_left1">
+              <h2><br></h2>
             <ul class="list1">
-              <li><a href='#'>My courses</a></li>
-              <li><a href="leaveapplication-lecturer.php">Apply for leave</a></li>
+              <li><a href="leave-application-list.php">Approve leave applications</a></li>
             </ul>
-            
+           
+       
             <div class="pad_top2"> <a href="logout.php" class="button"><span><span>LOGOUT</span></span></a> </div>
           </article>
         </div>

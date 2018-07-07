@@ -19,9 +19,9 @@
 			<label for="lname"><b>Last Name</b></label><br>
 			<input type="text" placeholder="Enter Last Name" name="lname" required><br>
 			
-			<label for="gender"><b>Gender</b></label><br>
+			<label for="gender"><b>Gender</b></label><br><br>
 			Male  <input type="radio" name="gender" value="0" checked> <br>
-			Female<input type="radio" name="gender" value="1"> <br>
+			Female<input type="radio" name="gender" value="1"> <br><br>
 			
 			<label for="dob"><b>Date of Birth</b></label><br><br>
 			<input type="date" placeholder="Enter Date of Birth" name="dob" min="1975-01-01" max="2005-12-31" required><br><br>
@@ -38,12 +38,6 @@
 			<label for="email"><b>Email</b></label><br>
 			<input type="email" placeholder="Enter Email" name="email" required><br>
 			
-			
-			
-
-			
-			<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
 			<div class="clearfix">
 			  <button type="submit" class="signupbtn" name="apply" >Submit Application</button>
 			</div>

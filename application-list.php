@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Learn Center | Approve Leave Application</title>
+<title>Learn Center | Approve Applications</title>
 <?php include('inc/header.inc.php'); 
 ?>
 <div class="body2">
   <div class="main">
     <!-- content -->
 	  <div class="container">
-		 <h2 class="pad_bot1">Leave Applications List</h2>
+		 <h2 class="pad_bot1">Applications List</h2>
 		 <ul>
 		 	<?php
-		 	include('inc/leaveapplicationlist.inc.php');
+		 	include('inc/applicationlist.inc.php');
 		 	?>
 		 </ul>
 	  </div>

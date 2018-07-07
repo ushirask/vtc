@@ -1,7 +1,17 @@
 <?php
    include('session.php');
+
+   $myusername = $_SESSION['login_user'];
+   $usertype = $myusername[0];
+   if($usertype === "L" ){
+					 header("location:lecturer-profile.php");
+		 }else if($usertype === "A" ){
+					 header("location:sectionalHead-profile.php");
+		 }else if($usertype === "P" ){
+					 header("location:principal-profile.php");
+		 }
 ?>
-   
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,7 +83,7 @@
 						$course_name=$row2['name'];
 						echo "<tr><td><Strong>$course_name</Strong></td><td>$row1[$sem]</td></tr>" ;
 					}
-			}			
+			}
 			?>
           </article>
         </div>

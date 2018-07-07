@@ -6,9 +6,9 @@ $num=mysqli_real_escape_string($conn,$_POST['number']);
 $dfrom=mysqli_real_escape_string($conn,$_POST['from']);
 $dto=mysqli_real_escape_string($conn,$_POST['to']);
 $reason=mysqli_real_escape_string($conn,$_POST['reason']);
-
+$principalApproval="awaiting";
 if(isset($_POST['submit'])){
-	$sql="INSERT INTO lecturer_leave (id,num,dfrom, dto, reason) VALUES ('$id',  '$num', '$dfrom', '$dto', '$reason');";
+	$sql="INSERT INTO lecturer_leave (id,num,dfrom, dto, reason, principalApproval) VALUES ('$id',  '$num', '$dfrom', '$dto', '$reason','$principalApproval');";
 	mysqli_query($conn, $sql);
-	header("Location: ../teacher-profile.php?successfull");
+	header("Location: ../lecturer-profile.php?successfull");
 }

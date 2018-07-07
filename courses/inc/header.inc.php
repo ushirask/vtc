@@ -23,7 +23,6 @@
           <ul id="menu">
             <li><a href="index.php">Home</a></li>
             <li><a href="courses.php">Courses</a></li>
-            <li><a href="teachers.php">Teachers</a></li>
             <li><a href="admissions.php">Apply Now</a></li>
 			<li><a href="profile.php">My Profile</a></li>
             <li class="end"><a href="contacts.php">Contacts</a></li>
@@ -31,7 +30,7 @@
         </nav>
       </div>
       <div class="wrapper">
-        <h1><a href="index.html" id="logo">Learn Center</a></h1>
+        <h1><a href="index.php" id="logo">Learn Center</a></h1>
       </div>
       <div id="slogan"> CodeX Tech<span>center for vocational education</span> </div>
     </header>

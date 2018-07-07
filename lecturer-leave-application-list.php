@@ -11,7 +11,7 @@
 		 <h2 class="pad_bot1">Leave Applications List</h2>
 		 <ul>
 		 	<?php
-		 	include('inc/leaveapplicationlist.inc.php');
+		 	include('inc/lecturerleaveapplicationlist.inc.php');
 		 	?>
 		 </ul>
 	  </div>
