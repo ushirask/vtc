@@ -11,5 +11,5 @@ $courseId=$_GET['courseId'];
 $conn=mysqli_connect('localhost','root','','vtc');
 $sql="INSERT INTO assignments(course_id,lecturer_id, name, attachment_no, attachment_size, deadline) VALUES('$courseId','$lecturerId','$assignmentName',  '$number', '$maxSize','$deadline');";
 mysqli_query($conn, $sql);
-header("Location: ../../lecturer-profile.php?successfull");
+header("Location: ../courses_view.php?id=$courseId");
 }
