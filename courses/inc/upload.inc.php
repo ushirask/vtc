@@ -1,6 +1,10 @@
 <?php
 if(isset($_POST['submit'])){
 	session_start();
+	$assignId=$_GET['assignId'];
+	$student_id=$_SESSION['login_user'];
+	$course_id=$_GET['courseId'];
+
 	$myusername=$_SESSION['login_user'];
 	$conn=mysqli_connect('localhost','root','','vtc');
 	$sql="SELECT * FROM student_assignments WHERE assignment_id='$assignId' && student_id='$myusername';";
@@ -18,10 +22,7 @@ if(isset($_POST['submit'])){
 	$file=file_get_contents($fileTmpName);
 	$file=base64_encode($file);
 
-	$assignId=$_GET['assignId'];
-	$student_id=$_SESSION['login_user'];
-	$course_id=$_GET['courseId'];
-
+	
 	
 	if($fileError===0){
 		if($fileSize<=30000000){
@@ -31,16 +32,16 @@ if(isset($_POST['submit'])){
 			if($resultCheck==0){
 				$sql1="INSERT INTO student_assignments(student_id, course_id, assignment_id, assignment_name, assignment_path) VALUES('$student_id','$course_id','$assignId','$fileName','$fileNameNew');";
 				mysqli_query($conn,$sql1);
-			}else if($resultCheck ==1){
+			}else if($resultCheck >0){
 				$sql2="UPDATE student_assignments SET assignment_name='$fileName', assignment_path='$fileNameNew' where assignment_id='$assignId' && student_id='$student_id';";
 				mysqli_query($conn,$sql2);
 			}
-			header("Location: ../../profile_courses.php?successfull");
+			header("Location: ../courses_view.php?id=$course_id");
 		}else{
-			header("Location: ../../profile_courses.php?FileSizeError");
+			header("Location: ../courses_view.php?id=$course_id");
 		}
 
 	}else{
-		header("Location: ../../profile_courses.php?error");
+		header("Location: ../courses_view.php?id=$course_id");
 	}
 }
