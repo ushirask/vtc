@@ -21,11 +21,11 @@
       <div class="wrapper">
         <nav>
           <ul id="menu">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="courses.php">Courses</a></li>
-            <li><a href="admissions.php">Apply Now</a></li>
-			<li><a href="profile.php">My Profile</a></li>
-            <li class="end"><a href="contacts.php">Contacts</a></li>
+            <li><a href="/vtc/index.php">Home</a></li>
+            <li><a href="/vtc/courses.php">Courses</a></li>
+            <li><a href="/vtc/admissions.php">Apply Now</a></li>
+			<li><a href="/vtc/profile.php">My Profile</a></li>
+            <li class="end"><a href="/vtc/contacts.php">Contacts</a></li>
           </ul>
         </nav>
       </div>

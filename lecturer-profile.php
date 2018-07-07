@@ -15,7 +15,7 @@
        <div class="pad_top2"> <span><span><h3>Welcome <?php echo $_SESSION['login_user'] ?></h3></span></span></a> </div>
         <div class="pad1 pad_top1">
           <article class="cols marg_right1">
-            <figure><a href='#'><img src="images/prof_img1.jpg" alt=""></a></figure>
+            <figure><a href="profile_courses.php"><img src="images/prof_img1.jpg" alt=""></a></figure>
             <span class="font1"><a href='#'>My Courses</a></span> </article>
           <article class="cols">
             <figure><a href="leave-application-lecturer.php"><img src="images/prof_img4.jpg" alt=""></a></figure>
