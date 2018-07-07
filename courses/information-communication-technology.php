@@ -43,6 +43,18 @@
                   <td class="table-course-objective" colspan="2">To gain knowledge, skills and competencies of an Information & Communication Technician, e.g. to install and implement database management system and database application packages, to design the concept & frame work for graphic design, to identify user requirements for software solution, to analyse requirements and design functionality of software solution, to develop and host websites, and to install and configure Local Area Network (LAN).</td>
                 </tr>
               </table>
+              <ul class="list-course-content">
+                <li class="course-content-header"><Strong>Course Content</Strong></label>
+              
+              
+                <li class="course-content">Web Development</li>
+              
+                <li class="course-content">Introduction to Programming</li>
+                <li class="course-content">Database Analysis and Design</li>
+                <li class="course-content">Information Technology Project</li>
+                <li class="course-content">Business Systems</li>
+              </ul>
+              
 
             </div>
             </div>
