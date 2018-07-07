@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,18 +13,20 @@ session_start();?>
         <div class="wrapper">
           <article class="col1">
             <div class="pad_left1">
-              <h2></h2>
+              <h2>Add Course Material</h2>
             </div>
             <div class="wrapper pad_bot1">
-              
+              <div class=\"container\">
               <?php
-                $weekId=$_GET['weekId'];
                 $course_id=$_GET['courseId'];
-                echo "<form method=\"POST\" action=\"inc/uploadCourseMaterial.inc.php?weekId=$weekId&courseId=$course_id\" enctype=\"multipart/form-data\">
-                  <input type=\"file\" name=\"file\">
-                  <button type=\"submit\" name=\"submit\">upload</button>
+                echo " <br> <form  method=\"POST\" action=\"inc/uploadCourseMaterial.inc.php?courseId=$course_id\" enctype=\"multipart/form-data\"><br>
+                  <input type=\"file\" name=\"file\"><br>
+                  <div class=\"clearfix\">
+                  <button type=\"submit\" name=\"submit\" class=\"signupbtn\">upload</button>
+                  </div>
                 </form>";
                 ?>
+              </div>
             </div>
         </div>
       </div>
@@ -35,3 +36,4 @@ session_start();?>
 </div>
 <script type="text/javascript">Cufon.now();</script>
 </body>
+</html>

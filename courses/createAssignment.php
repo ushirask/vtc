@@ -16,19 +16,25 @@ session_start();?>
               <h2></h2>
             </div>
             <div class="wrapper pad_bot1">
-              <?php $weekId=$_GET['weekId'];
-                $assignId=$_GET['assignId']; 
-                
-              echo"<form method=\"POST\" action=\"inc/createAssignment.inc.php?weekId=$weekId&assignId=$assignId\">
-                Assignment Name: <input type=\"text\" name=\"name\"> <br>
-                No of Attachments: <input type=\"text\" name=\"attachment_no\"> <br>
-                Max size of Attachment: <input type=\"text\" name=\"attachment_size\"> <br>
-                Type of attachment: <input type=\"text\" name=\"attachment_type\"> <br>
-                Graded Status: <input type=\"text\" name=\"status\"> <br>
-                Deadline: <input type=\"date\" name=\"deadline\"> <br>
-                <button type=\"submit\" name=\"create\">Create</button>
-              </form><br>";?>
-              
+              <br>
+              <?php 
+               $courseId= $_GET['courseId'];
+              echo"<form style=\"border:1px solid #ccc\" method=\"POST\" action=\"inc/createAssignment.inc.php?courseId=$courseId\">
+                <div class=\"container\">
+                <b>Assignment Name: </b> <br>
+                <input type=\"text\" name=\"name\"> <br>
+                <b>No of Attachments: </b><br>
+                <input type=\"text\" name=\"attachment_no\"> <br>
+                <b>Max size of Attachment: </b><br>
+                <input type=\"text\" name=\"attachment_size\" placeholder=\"Enter size in bytes\" required > <br>
+                <b>Deadline:</b> <br>
+                <input type=\"date\" name=\"deadline\"> <br>
+                <div class=\"clearfix\">
+                <button type=\"submit\" name=\"create\" class=\"signupbtn\">Create</button>
+                </div>
+                </div>
+              </form>";?>
+              </div>  
             </div>
         </div>
       </div>

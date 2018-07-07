@@ -10,43 +10,35 @@ while($row=mysqli_fetch_assoc($result)){
 	$courseMaterialArray[]=$row;
 }
 
-for($i=0; $i<14; $i++){
-	echo "<ul>";
+	echo "<ul class=\"list1\">";
 	foreach ($courseMaterialArray as $courseMaterial) {
-		$week_id=$courseMaterial['week_id'];
 		$materialName=$courseMaterial['material_name'];
 		$materialPath=$courseMaterial['material_path'];
-		if($i==$week_id){
-			echo "<li> <a href=\"uploadsCourseMaterial/$materialPath\">$materialName</a></li>";
-		}
+		echo "<li> <a href=\"uploadsCourseMaterial/$materialPath\">$materialName</a></li>";
 
 	}
-	echo "</ul>";
-}
+
 
 $sql="SELECT * FROM assignments WHERE course_id='$id';";
 $result=mysqli_query($conn,$sql);
-$assigmentArray=array();
+
+$assignmentArray=array();
 while($row=mysqli_fetch_assoc($result)){
-	$assigmentArray[]=$row;
+	$assignmentArray[]=$row;
 }
 
-for($i=0; $i<14; $i++){
-	echo "<ul>";
+
 	foreach ($assignmentArray as $assignment) {
-		$week_id=$assignment['week_id'];
 		$assignment_name=$assignment['name'];
 		$assignId=$assignment['assignment_id'];
-		if($i==$week_id){
-			echo "<li><a href=\"assignment_view.php?assignId=$assignId&weekId=$i&courseId=$id\">$assignment_name</a></li>";
-		}
+		echo "<li><a href=\"assignment_view.php?assignId=$assignId&courseId=$id\">$assignment_name</a></li>";
 	}	
-	$sql1='SELECT assignment_id FROM assignments WHERE week_id="$i";';
-	$result1=mysqli_query($conn, $sql1);
-	$resultCheck=mysqli_num_rows($result1);
+	
 	if($usertype === "L" ){ 
-		echo "<li><a href=\"CreateItems.php?weekId=$i&assignId=$resultCheck&courseId=$id\">Create</a></li>";
+		echo "<li><a href=\"CreateItems.php?courseId=$id\">Create</a></li>";
 	}
 	echo "</ul>";
-}
+
+
+
 ?>

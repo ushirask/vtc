@@ -4,7 +4,7 @@
 <title>Learn Center | Courses</title>
 <?php include('../inc/header.inc.php'); 
 ?>
-<link rel="stylesheet" type="text/css" href="../css/courses.css">
+<link rel="stylesheet" type="text/css" href="css/form.css">
 <div class="body2">
   <div class="main">
     <!-- content -->
@@ -20,10 +20,19 @@
               <?php
                 include('inc/connectdb.inc.php');
                 
-                echo "<form method=\"POST\" action=\"inc/gradeAssignment.inc.php?assignId=$assignId&stuId=$student_id&weekId=$weekId&courseId=$courseId\">
-                  <a href=\"uploads/$materialPath\">$student_id</a>
-                  Marks: <input type=\"int\" name=\"marks\">
-                  <button type=\"submit\" name=\"grade\">Grade</button>
+                echo "<form style=\"border:1px solid #ccc\" method=\"POST\" action=\"inc/gradeAssignment.inc.php?assignId=$assignId&stuId=$student_id&courseId=$courseId\">
+                  <div class=\"container\">
+                    <h2 class=\"pad_bot1\">Grade Assignment</h2>
+                  <br>
+                  <ul class=\"list1\">
+                  <li><a href=\"uploads/$materialPath\">$student_id</a></li><br><br>
+                  </ul>
+                 <b> Marks:</b> <br>
+                 <input type=\"int\" name=\"marks\" class=\"input\" min=\"0\" max=\"100\"> <br><br>
+                 <div class=\"clearfix\">
+                  <button type=\"submit\" name=\"grade\" class=\"signupbtn\">Grade</button>
+                </div>
+                </div>
                 </form>";
               ?>
             </div>

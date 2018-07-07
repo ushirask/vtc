@@ -74,6 +74,20 @@
                   <td class="table-course-objective" colspan="2">To gain knowledge, skills and competencies of a Refrigeration & Air-Conditioning Mechanic, e.g. to prepare estimates on installation and/or maintenance of Refrigeration & Air Conditioning systems, to perform installation of Window & Split type Air Conditioners, to repair refrigerators, deep freezers, display units, bottle coolers, water coolers and mobile refrigeration plants.</td>
                 </tr>
               </table>
+              <ul class = "list-course-content">
+                <li class="course-content-header"><Strong>Course Content</Strong></label>
+                <li class="course-content">Introduction to electrical engineering</li>
+                <li class="course-content">Electric Circuit Theory</li>
+                <li class="course-content">Physical Electronics A</li>
+                <li class="course-content">Mathematics</li>
+                <li class="course-content">Energy Resources</li>
+                <li class="course-content">Communication Skills</li>
+              </ul>
+              
+                
+              
+                  
+                  
             </div>
             </div>
         </div>

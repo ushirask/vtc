@@ -16,19 +16,20 @@ session_start();?>
               <h2></h2>
             </div>
             <div class="wrapper pad_bot1">
-              <ul>
-                <?php $weekId=$_GET['weekId'];
-                $assignId=$_GET['assignId'];
+              <div class=\"container\">
+                <br>
+              <ul class="list1">
+                <?php 
                 $courseId=$_GET['courseId'];
-                 echo "<li><a href=\"createAssignment.php?weekId=$weekId&assignId=$assignId\">Add Assignment</a></li>";
-                echo "<li><a href=\"addCourseMaterial.php?weekId=$weekId&courseId=$courseId\">Add course material</a></li>";?>
+                 echo "<li><a href=\"createAssignment.php?courseId=$courseId\">Add Assignment</a></li>";
+                echo "<li><a href=\"addCourseMaterial.php?courseId=$courseId\">Add course material</a></li>";?>
               
                 <li><a href="#">Create Forum</a></li>
                 <li><a href="#">Create Quiz</a></li>
                 <li><a href="#">Create Feedback</a></li>
 
               </ul>
-              
+              </div>
             </div>
         </div>
       </div>

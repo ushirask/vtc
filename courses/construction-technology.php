@@ -45,7 +45,10 @@
               </table>
               <ul class="list-course-content">
                 <li class="course-content-header"><Strong>Course Content</Strong></label>
+              
+              
                 <li class="course-content">Managing labour</li>
+              
                 <li class="course-content">Embarkation of site</li>
                 <li class="course-content">Quality control in construction</li>
                 <li class="course-content">Provide welfare of employees</li>

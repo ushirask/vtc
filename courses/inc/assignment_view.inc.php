@@ -18,10 +18,14 @@ foreach ($assignments as $assignment) {
 	$deadline=$assignment['deadline'];
 }
 if($resultCheck==0){
-	echo "<table><tr><td>Submission Status</td><td>\"Not attempted\"</td></tr><tr><td>\"Grading Status\"</td><td>\"Not graded\"</td></tr><tr><td>Due date</td><td>$deadline</td></tr></table>";
-	echo "<form action=\"inc/upload.inc.php?assignId=$assignId&weekId=$weekId&courseId=$course_id\" method=\"POST\" enctype=\"multipart/form-data\">
+	echo "<table class=\"courses-table\"><tr><td \"table-header\"><b>Submission Status</b></td><td \"table-header\">\"Not attempted\"</td></tr><tr><td \"table-header\"><b>\"Grading Status\"</b></td><td \"table-header\">\"Not graded\"</td></tr><tr><td \"table-header\"><b>Due date</b></td><td>$deadline</td></tr></table>";
+	echo "<form  action=\"inc/upload.inc.php?assignId=$assignId&courseId=$course_id\" method=\"POST\" enctype=\"multipart/form-data\">
+	  <div class=\"container\">
       <input type=\"file\" name=\"file\">
-      <button type=\"submit\" name=\"submit\">upload</button>
+      <div class=\"clearfix\">
+      <button type=\"submit\" name=\"submit\" class=\"signupbtn\">upload</button>
+      </div>
+      </div>
     </form>";
 } 
 else if($resultCheck>0){
@@ -33,26 +37,32 @@ else if($resultCheck>0){
 		}
 	}
 
-	echo "<table>
+	echo "
+		   <table class= \"courses-table\">
 	        <tr>
-	          <td>Submission Status</td>
-	          <td>Submitted for grading</td>
+	          <td class=\"table-header\"><b>Submission Status </b></td>
+	          <td class=\"table-header\">Submitted for grading</td>
 	        </tr>
 	        <tr>
-	          <td>Grading Status</td>
-	          <td>$gradingStatus</td>
+	          <td class=\"table-header\"><b>Grading Status</b></td>
+	          <td class=\"table-header\">$gradingStatus</td>
 	        </tr>
 	        <tr>
-	          <td>Due date</td>
-	          <td>$deadline</td>
+	          <td class=\"table-header\"><b>Due date</b></td>
+	          <td class=\"table-header\">$deadline</td>
+	          <br> 
 	        </tr>
 	      </table>";
-	echo "<form action=\"inc/upload.inc.php?assignId=$assignId&weekId=$weekId&courseId=$course_id\" method=\"POST\" enctype=\"multipart/form-data\">
+	echo "<form  action=\"inc/upload.inc.php?assignId=$assignId&courseId=$course_id\" method=\"POST\" enctype=\"multipart/form-data\">
+		<div class=\"container\">
 	  <input type=\"file\" name=\"file\">
-	  <button type=\"submit\" name=\"submit\">Edit submission</button>
+	  <div class=\"clearfix\">
+	  <button type=\"submit\" name=\"submit\" class=\"signupbtn\">Edit submission</button>
+	  </div>
+	  </div>
 	</form>";
 }
-?>
+
 
 
 
