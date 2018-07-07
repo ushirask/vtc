@@ -74,6 +74,14 @@
                   <td class="table-course-objective" colspan="2">To gain knowledge, skills and competencies of a Motorcycle / Three-Wheeler Mechanic, e.g. to repair engines, electrical systems, transmissions, and suspensions; as well as fundamentals in clutches, ignitions, brakes, wheel assemblies, and maintenance.</td>
                 </tr>
               </table>
+              <ul class="list-course-content">
+                <li class="course-content-header"><Strong>Course Content</Strong></label>
+                <li class="course-content">Fluid Mechanics</li>
+                <li class="course-content">Manufacturing Methods</li>
+                <li class="course-content">Quality Engineering Thermodynamics</li>
+                <li class="course-content">Mathematics</li>
+                <li class="course-content">Language Skills</li>
+              </ul>
             </div>
             </div>
         </div>
