@@ -6,10 +6,9 @@
 <html lang="en">
 <head>
 <title>Learn Center | Courses</title>
-<?php
-include('inc/header.inc.php');
+<?php include('inc/header.inc.php');
 ?>
-<link rel="stylesheet" type="text/css" href="../css/courses.css">
+<link rel="stylesheet" type="text/css" href="css/courses.css">
 <div class="body2">
   <div class="main">
     <!-- content -->
@@ -18,21 +17,17 @@ include('inc/header.inc.php');
         <div class="wrapper">
           <article class="col1">
             <div class="pad_left1">
-              <?php
-                $id=$_GET['id'];
-                include('inc/course_title_view.inc.php');
-              ?>
+              <h2>Submission View</h2>
             </div>
             <div class="wrapper pad_bot1">
-              <div class="container"></div>
-                <?php
-                  $id=$_GET['id'];
-                  include('inc/courses_view.inc.php');
+              <?php
+                $myusername = $_SESSION['login_user'];
+                $userType = $myusername[0];
+                $assignId=$_GET['assignId'];
+                $course_id=$_GET['courseId'];
+                include('inc/assignmentList.inc.php');
                 ?>
-
-              </table>
-
-            </div>
+          </div>
         </div>
       </div>
     </section>

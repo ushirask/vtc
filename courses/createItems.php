@@ -7,7 +7,7 @@
 <head>
 <title>Learn Center | Courses</title>
 <?php include('inc/header.inc.php');
-session_start();?>
+?>
 <link rel="stylesheet" type="text/css" href="../css/courses.css">
 <div class="body2">
   <div class="main">
@@ -26,7 +26,7 @@ session_start();?>
                 <?php
                 $courseId=$_GET['courseId'];
                  echo "<li><a href=\"createAssignment.php?courseId=$courseId\">Add Assignment</a></li>";
-                echo "<li><a href=\"addCourseMaterial.php?courseId=$courseId\">Add course material</a></li>";?>
+                echo "<li><a href=\"addCourseMaterial.php?courseId=$courseId\">Upload Course Material</a></li>";?>
 
                 <li><a href="#">Create Forum</a></li>
                 <li><a href="#">Create Quiz</a></li>
