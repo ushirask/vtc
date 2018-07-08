@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>My Courses</title>
-<?php include('inc/header.inc.php');include('inc/session.inc.php'); ?>
+<?php include('inc/header.inc.php');include('inc/sessionLecturer.inc.php'); ?>
 <div class="body2">
   <div class="main">
     <!-- content -->

@@ -25,5 +25,6 @@
 		
 		$sql_new="UPDATE student_courses SET s1=$sem1,s2=$sem2,s3=$sem3,s4=$sem4,s5=$sem5,s6=$sem6, WHERE studentid=$studentid AND courseid=$courseid;";
 		$result_new = mysqli_query($db,$sql_new);		
+		header("location:food-technology.php?id=$sem6");
 	}
 ?>
