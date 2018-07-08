@@ -1,8 +1,12 @@
+<?php
+   include('inc/sessionLecturer.inc.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Learn Center | Courses</title>
-<?php include('../inc/header.inc.php'); 
+<?php include('inc/header.inc.php');
 ?>
 <link rel="stylesheet" type="text/css" href="css/form.css">
 <div class="body2">
@@ -16,10 +20,10 @@
               <h2></h2>
             </div>
             <div class="wrapper pad_bot1">
-              
+
               <?php
                 include('inc/connectdb.inc.php');
-                
+
                 echo "<form style=\"border:1px solid #ccc\" method=\"POST\" action=\"inc/gradeAssignment.inc.php?assignId=$assignId&stuId=$student_id&courseId=$courseId\">
                   <div class=\"container\">
                     <h2 class=\"pad_bot1\">Grade Assignment</h2>
