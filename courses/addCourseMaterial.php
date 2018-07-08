@@ -1,8 +1,12 @@
+<?php
+   include('inc/sessionLecturer.inc.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Learn Center | Courses</title>
-<?php include('../inc/header.inc.php'); 
+<?php include('inc/header.inc.php');
 session_start();?>
 <link rel="stylesheet" type="text/css" href="../css/courses.css">
 <div class="body2">

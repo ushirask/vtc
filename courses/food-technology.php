@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>Learn Center | Courses</title>
-<?php include('../inc/header.inc.php'); ?>
+<?php include('inc/header.inc.php'); ?>
 <link rel="stylesheet" type="text/css" href="../css/courses.css">
 <div class="body2">
   <div class="main">
@@ -37,7 +37,7 @@
                   <td>National Vocational Qualification Certificate - NVQ Level 4</td>
                 </tr>
                 <tr>
-                  <td class="table-course-objective-header" colspan="2"><Strong>Course Objective(Purpose of the Qualification)</Strong></td>    
+                  <td class="table-course-objective-header" colspan="2"><Strong>Course Objective(Purpose of the Qualification)</Strong></td>
                 </tr>
                 <tr>
                   <td class="table-course-objective" colspan="2">To gain knowledge, skills and competencies of a Baker, e.g. to produce basic bread & buns, different varieties of bread & buns, pastries, and cakes. Also getting insights on how to manage routine functions of a Bakery.</td>
@@ -45,10 +45,10 @@
               </table>
               <ul class="list-course-content">
                 <li class="course-content-header"><Strong>Course Content</Strong></label>
-              
-              
+
+
                 <li class="course-content">Chemistry</li>
-              
+
                 <li class="course-content">Food biochemistry</li>
                 <li class="course-content">Engineering Drawing</li>
                 <li class="course-content">Physical Laboratary Practicals</li>
