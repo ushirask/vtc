@@ -1,14 +1,9 @@
-<?php
-   include('../inc/sessionStudent.inc.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Learn Center | Courses</title>
-<?php
-include('inc/header.inc.php');
-?>
+<?php include('../inc/header.inc.php'); 
+session_start();?>
 <link rel="stylesheet" type="text/css" href="../css/courses.css">
 <div class="body2">
   <div class="main">
@@ -18,20 +13,17 @@ include('inc/header.inc.php');
         <div class="wrapper">
           <article class="col1">
             <div class="pad_left1">
-              <?php
-                $id=$_GET['id'];
-                include('inc/course_title_view.inc.php');
-              ?>
+              <h2></h2>
             </div>
             <div class="wrapper pad_bot1">
               <div class="container"></div>
-                <?php
+                <?php 
                   $id=$_GET['id'];
-                  include('inc/courses_view.inc.php');
+                  include('inc/courses_view.inc.php');                   
                 ?>
-
+                
               </table>
-
+              
             </div>
         </div>
       </div>

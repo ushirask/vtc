@@ -15,10 +15,8 @@
               <h2>Current Courses</h2>
             </div>
             <ul class="list1">
-
-        <?php
+				<?php
           $user=$_SESSION['login_user'];
-<<<<<<< HEAD
           $userType = $user[0];
           if($userType=='L'){
 					   $sql1="SELECT * from courses where lecturer_id='$user'";
@@ -41,24 +39,9 @@
                 $course_name=$row2['name'];
                 echo "<li><a href=\"courses/courses_view.php?id=$course_id\">$course_name</a></li>";
               }
-=======
-
-          $sql1="SELECT courseid from student_courses where studentid='$user';";
-          $result1=mysqli_query($db,$sql1);
-
-          while($row1 = mysqli_fetch_array($result1,MYSQLI_ASSOC)){
-            $course_id=$row1['courseid'];
-            $sql2="SELECT * from courses where courseID='$course_id';";
-            $result2=mysqli_query($db,$sql2);
-
-            while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
-              $course_name=$row2['name'];
-              echo "<li><a href=\"courses/courses_view.php?id=$course_id\">$course_name</a></li>";
->>>>>>> ec1741b888372dd91838754b277a87b41206628e
             }
-          }
-            echo '</ul>';
-          ?>
+              echo '</ul>';
+          } ?>
 
             <div class="pad_top2"> <a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
           </article>

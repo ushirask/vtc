@@ -15,13 +15,8 @@
        <div class="pad_top2"> <span><span><h3>Welcome <?php echo $_SESSION['login_user'] ?></h3></span></span></a> </div>
         <div class="pad1 pad_top1">
           <article class="cols marg_right1">
-<<<<<<< HEAD
             <figure><a href="profile_courses.php"><img src="images/prof_img1.jpg" alt=""></a></figure>
             <span class="font1"><a href='#'>My Courses</a></span> </article>
-=======
-            <figure><a href='lecturer-courses.php'><img src="images/prof_img1.jpg" alt=""></a></figure>
-            <span class="font1"><a href='lecturer-courses.php'>My Courses</a></span> </article>
->>>>>>> ec1741b888372dd91838754b277a87b41206628e
           <article class="cols">
             <figure><a href="leave-application-lecturer.php"><img src="images/prof_img4.jpg" alt=""></a></figure>
             <span class="font1"><a href="leave-application-lecturer.php">Apply for Leave</a></span> </article>

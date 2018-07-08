@@ -1,12 +1,8 @@
-<?php
-   include('inc/sessionLecturer.inc.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Learn Center | Courses</title>
-<?php include('inc/header.inc.php');
+<?php include('../inc/header.inc.php'); 
 session_start();?>
 <link rel="stylesheet" type="text/css" href="../css/courses.css">
 <div class="body2">
@@ -23,11 +19,11 @@ session_start();?>
               <div class=\"container\">
                 <br>
               <ul class="list1">
-                <?php
+                <?php 
                 $courseId=$_GET['courseId'];
                  echo "<li><a href=\"createAssignment.php?courseId=$courseId\">Add Assignment</a></li>";
                 echo "<li><a href=\"addCourseMaterial.php?courseId=$courseId\">Add course material</a></li>";?>
-
+              
                 <li><a href="#">Create Forum</a></li>
                 <li><a href="#">Create Quiz</a></li>
                 <li><a href="#">Create Feedback</a></li>

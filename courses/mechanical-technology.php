@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>Learn Center | Courses</title>
-<?php include('inc/header.inc.php'); ?>
+<?php include('../inc/header.inc.php'); ?>
 <link rel="stylesheet" type="text/css" href="../css/courses.css">
 <div class="body2">
   <div class="main">
@@ -37,19 +37,19 @@
                   <td>National Vocational Qualification Certificate - NVQ Level 4</td>
                 </tr>
                 <tr>
-                  <td class="table-course-objective-header" colspan="2"><Strong>Course Objective(Purpose of the Qualification)</Strong></td>
+                  <td class="table-course-objective-header" colspan="2"><Strong>Course Objective(Purpose of the Qualification)</Strong></td>    
                 </tr>
                 <tr>
                   <td class="table-course-objective" colspan="2">To gain knowledge, skills and competencies of a Machinist, e.g. to perform lathe operations, drilling, welding & allied operations, and grinding operations. Also to work with grind lathe tools and drill bits, to do basic workshop practice, and to perform milling operations.</td>
                 </tr>
               </table>
-
+              
               <ul class="list-course-content">
                 <li class="course-content-header"><Strong>Course Content</Strong></label>
-
-
+              
+              
                 <li class="course-content">Hand tool skillsr</li>
-
+              
                 <li class="course-content">Computer applications</li>
                 <li class="course-content">Metallurgy</li>
                 <li class="course-content">Engineering drawing</li>
