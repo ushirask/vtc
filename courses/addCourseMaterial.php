@@ -1,16 +1,8 @@
-<?php
-   include('inc/sessionLecturer.inc.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Learn Center | Courses</title>
-<<<<<<< HEAD
 <?php include('inc/header.inc.php'); 
-=======
-<?php include('inc/header.inc.php');
->>>>>>> ec1741b888372dd91838754b277a87b41206628e
 session_start();?>
 <link rel="stylesheet" type="text/css" href="../css/courses.css">
 <div class="body2">

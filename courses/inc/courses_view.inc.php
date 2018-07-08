@@ -3,10 +3,8 @@ $myusername = $_SESSION['login_user'];
 $usertype = $myusername[0];
 $id=$_GET['id'];
 $conn=mysqli_connect('localhost','root','','vtc');
-
 $sql="SELECT * FROM course_material WHERE course_id='$id';";
 $result=mysqli_query($conn,$sql);
-
 $courseMaterialArray=array();
 while($row=mysqli_fetch_assoc($result)){
 	$courseMaterialArray[]=$row;
@@ -34,10 +32,13 @@ while($row=mysqli_fetch_assoc($result)){
 		$assignment_name=$assignment['name'];
 		$assignId=$assignment['assignment_id'];
 		echo "<li><a href=\"assignment_view.php?assignId=$assignId&courseId=$id\">$assignment_name</a></li>";
-	}
-
-	if($usertype === "L" ){
+	}	
+	
+	if($usertype === "L" ){ 
 		echo "<li><a href=\"CreateItems.php?courseId=$id\">Create</a></li>";
 	}
 	echo "</ul>";
+
+
+
 ?>
