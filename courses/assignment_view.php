@@ -1,9 +1,13 @@
+<?php
+   include('inc/sessionStudent.inc.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Learn Center | Courses</title>
-<?php include('inc/header.inc.php'); 
-session_start();?>
+<?php include('inc/header.inc.php');
+?>
 <link rel="stylesheet" type="text/css" href="css/courses.css">
 <div class="body2">
   <div class="main">
@@ -21,14 +25,7 @@ session_start();?>
                 $userType = $myusername[0];
                 $assignId=$_GET['assignId'];
                 $course_id=$_GET['courseId'];
-                if($userType=='S'){
-                  include('inc/assignment_view.inc.php');
-
-                }
-              else if($userType=='L'){
-                include('inc/assignmentList.inc.php');
-
-              }
+                include('inc/assignment_view.inc.php');
             ?>
           </div>
         </div>

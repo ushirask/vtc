@@ -1,9 +1,13 @@
+<?php
+   include('inc/sessionStudent.inc.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>My Courses</title>
-<?php include('inc/header.inc.php'); 
-	include('inc/session.inc.php'); ?>
+<?php include('inc/header.inc.php');
+ ?>
 <div class="body2">
   <div class="main">
     <!-- content -->
@@ -16,49 +20,23 @@
             </div>
             <ul class="list1">
 
-        <?php
-          $user=$_SESSION['login_user'];
-<<<<<<< HEAD
-          $userType = $user[0];
-          if($userType=='L'){
-					   $sql1="SELECT * from courses where lecturer_id='$user'";
-             $result1=mysqli_query($db,$sql1);
-              while($row1 = mysqli_fetch_array($result1,MYSQLI_ASSOC)){
-                $course_id=$row1['courseID'];
-                $course_name=$row1['name'];
-                echo "<li><a href=\"courses/courses_view.php?id=$course_id\">$course_name</a></li>";
-               }
-            echo '</ul>';
+			<?php
+      $user=$_SESSION['login_user'];
+      $userType = $user[0];
+
+        $sql1="SELECT courseid from student_courses where studentid='$user';";
+        $result1=mysqli_query($db,$sql1);
+        while($row1 = mysqli_fetch_array($result1,MYSQLI_ASSOC)){
+          $course_id=$row1['courseid'];
+          $sql2="SELECT * from courses where courseID='$course_id';";
+          $result2=mysqli_query($db,$sql2);
+          while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
+            $course_name=$row2['name'];
+            echo "<li><a href=\"courses/courses_view.php?id=$course_id\">$course_name</a></li>";
           }
-          else {
-            $sql1="SELECT courseid from student_courses where studentid='$user';";
-            $result1=mysqli_query($db,$sql1);
-            while($row1 = mysqli_fetch_array($result1,MYSQLI_ASSOC)){
-              $course_id=$row1['courseid'];
-              $sql2="SELECT * from courses where courseID='$course_id';";
-              $result2=mysqli_query($db,$sql2);
-              while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
-                $course_name=$row2['name'];
-                echo "<li><a href=\"courses/courses_view.php?id=$course_id\">$course_name</a></li>";
-              }
-=======
-
-          $sql1="SELECT courseid from student_courses where studentid='$user';";
-          $result1=mysqli_query($db,$sql1);
-
-          while($row1 = mysqli_fetch_array($result1,MYSQLI_ASSOC)){
-            $course_id=$row1['courseid'];
-            $sql2="SELECT * from courses where courseID='$course_id';";
-            $result2=mysqli_query($db,$sql2);
-
-            while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
-              $course_name=$row2['name'];
-              echo "<li><a href=\"courses/courses_view.php?id=$course_id\">$course_name</a></li>";
->>>>>>> ec1741b888372dd91838754b277a87b41206628e
-            }
-          }
-            echo '</ul>';
-          ?>
+        }
+          echo '</ul>';
+			  ?>
 
             <div class="pad_top2"> <a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
           </article>
