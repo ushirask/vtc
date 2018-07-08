@@ -21,17 +21,28 @@
       <div class="wrapper">
         <nav>
           <ul id="menu">
+<<<<<<< HEAD
+            <li><a href="/vtc/index.php">Home</a></li>
+            <li><a href="/vtc/courses.php">Courses</a></li>
+            <li><a href="/vtc/admissions.php">Apply Now</a></li>
+			<li><a href="/vtc/profile.php">My Profile</a></li>
+=======
             <li><a href="/vtc">Home</a></li>
             <li><a href="/vtc/courses.php">Courses</a></li>
             <!--<li><a href="/vtc/teachers.php">Teachers</a></li>-->
             <li><a href="/vtc/admissions.php">Apply Now</a></li>
 			      <li><a href="/vtc/profile.php">My Profile</a></li>
-            <li class="end"><a href="/vtc/contacts.php">Contact Us</a></li>
+>>>>>>> ec1741b888372dd91838754b277a87b41206628e
+            <li class="end"><a href="/vtc/contacts.php">Contacts</a></li>
           </ul>
         </nav>
       </div>
       <div class="wrapper">
+<<<<<<< HEAD
+        <h1><a href="/vtc/index.php" id="logo">Learn Center</a></h1>
+=======
         <h1><a href="/vtc" id="logo">Learn Center</a></h1>
+>>>>>>> ec1741b888372dd91838754b277a87b41206628e
       </div>
       <div id="slogan"> CodeX Tech <span> Center for Vocational Education</span> </div>
     </header>

@@ -26,7 +26,7 @@
             <!--<li><a href="/vtc/teachers.php">Teachers</a></li>-->
             <li><a href="/vtc/admissions.php">Apply Now</a></li>
 			      <li><a href="/vtc/profile.php">My Profile</a></li>
-            <li class="end"><a href="/vtc/contacts.php">Contact Us</a></li>
+            <li class="end"><a href="/vtc/contacts.php">Contacts</a></li>
           </ul>
         </nav>
       </div>

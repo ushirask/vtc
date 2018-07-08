@@ -1,5 +1,5 @@
 <?php
-   include('inc/sessionStudent.inc.php');
+   include('../inc/sessionStudent.inc.php');
 ?>
 
 <!DOCTYPE html>

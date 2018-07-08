@@ -33,11 +33,7 @@ while($row=mysqli_fetch_assoc($result)){
 	foreach ($assignmentArray as $assignment) {
 		$assignment_name=$assignment['name'];
 		$assignId=$assignment['assignment_id'];
-		if($usertype === "L" ){
-			echo "<li><a href=\"assignment_view_lecturer.php?assignId=$assignId&courseId=$id\">$assignment_name</a></li>";
-		}else {
-			echo "<li><a href=\"assignment_view.php?assignId=$assignId&courseId=$id\">$assignment_name</a></li>";
-		}
+		echo "<li><a href=\"assignment_view.php?assignId=$assignId&courseId=$id\">$assignment_name</a></li>";
 	}
 
 	if($usertype === "L" ){
