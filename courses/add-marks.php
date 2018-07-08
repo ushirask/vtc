@@ -29,7 +29,6 @@
           
           else{header("login-page.php");}?>
 
-            <div class="pad_top2"> <a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
           </article>
         </div>
       </div>
