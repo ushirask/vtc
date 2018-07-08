@@ -28,7 +28,7 @@
                }
             echo '</ul>';
           }
-          else {
+          else if($userType=='1') {
             $sql1="SELECT courseid from student_courses where studentid='$user';";
             $result1=mysqli_query($db,$sql1);
             while($row1 = mysqli_fetch_array($result1,MYSQLI_ASSOC)){
@@ -41,7 +41,7 @@
               }
             }
               echo '</ul>';
-          } ?>
+          }else{header("login-page.php");}?>
 
             <div class="pad_top2"> <a href="inc\logout.inc.php" class="button"><span><span>LOGOUT</span></span></a> </div>
           </article>

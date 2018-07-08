@@ -16,7 +16,7 @@
         <div class="pad1 pad_top1">
           <article class="cols marg_right1">
             <figure><a href="profile_courses.php"><img src="images/prof_img1.jpg" alt=""></a></figure>
-            <span class="font1"><a href='#'>My Courses</a></span> </article>
+            <span class="font1"><a href='profile-courses.php'>My Courses</a></span> </article>
           <article class="cols">
             <figure><a href="leave-application-lecturer.php"><img src="images/prof_img4.jpg" alt=""></a></figure>
             <span class="font1"><a href="leave-application-lecturer.php">Apply for Leave</a></span> </article>

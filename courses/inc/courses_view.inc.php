@@ -36,6 +36,7 @@ while($row=mysqli_fetch_assoc($result)){
 	
 	if($usertype === "L" ){ 
 		echo "<li><a href=\"CreateItems.php?courseId=$id\">Create</a></li>";
+		echo "<li><a href=\"add-marks.php?courseId=$id\">Add Examination marks</a></li>";
 	}
 	echo "</ul>";
 

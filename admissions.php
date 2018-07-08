@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>Learn Center | Apply</title>
-<?php include('inc/formdb.php'); ?>
+<?php include('inc/formdb.inc.php'); ?>
 <?php include('inc/header.inc.php'); ?>
 <div class="body2">
   <div class="main">

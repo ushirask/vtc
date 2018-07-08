@@ -21,7 +21,7 @@ session_start();?>
                 $userType = $myusername[0];
                 $assignId=$_GET['assignId'];
                 $course_id=$_GET['courseId'];
-                if($userType=='S'){
+                if($userType=='1'){
                   include('inc/assignment_view.inc.php');
                 
                 }
