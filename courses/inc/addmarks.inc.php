@@ -2,7 +2,7 @@
 	include('sessionLecturer.inc.php');
 	$studentid=$_GET['studentid'];
 	$courseid=$_GET['courseid'];
-	$sql1="SELECT * FROM student_courses WHERE studentid=$studentid AND courseid=$courseid;";
+	$sql1="SELECT * FROM student_courses WHERE (studentid=$studentid AND courseid=$courseid);";
 	$result1 = mysqli_query($db,$sql1);
 	while($row1 = mysqli_fetch_array($result1,MYSQLI_ASSOC)){
 		$s1=$row1['s1'];
@@ -23,8 +23,8 @@
 		$sem5=mysqli_real_escape_string($db, $_POST['sem5']);
 		$sem6=mysqli_real_escape_string($db, $_POST['sem6']);
 		
-		$sql_new="UPDATE student_courses SET s1=$sem1,s2=$sem2,s3=$sem3,s4=$sem4,s5=$sem5,s6=$sem6, WHERE studentid=$studentid AND courseid=$courseid;";
-		$result_new = mysqli_query($db,$sql_new);		
-		header("location:food-technology.php?id=$sem6");
+		$sql2="UPDATE student_courses SET s1='$sem1',s2='$sem2',s3='$sem3',s4='$sem4',s5='$sem5',s6='$sem6' WHERE (studentid='$studentid' AND courseid='$courseid')";
+		$result2= mysqli_query($db,$sql2);		
+		header("location:add-marks.php?courseId=$courseid");
 	}
 ?>
