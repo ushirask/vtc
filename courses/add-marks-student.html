@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Learn Center | Apply</title>
+<title>Learn Center | Add Marks</title>
 <?php include('inc/addmarks.inc.php'); ?>
 <?php include('inc/header.inc.php'); ?>
 <div class="body2">
@@ -13,17 +13,17 @@
 			 <br><br>
 			
 			<label for="sem1"><b>Semester 1 </b></label>
-			<input type="text" value=<?php echo $s1 ?> name="sem1" required><br>
+			<input type="number" name="sem1" min=0 max=100 value=<?php echo $s1 ?>  ><br>
 			<label for="sem2"><b>Semester 2</b></label>
-			<input type="text" value=<?php echo $s2 ?> name="sem2" required><br>
+			<input type="number" name="sem2" min=0 max=100 value=<?php echo $s2 ?>  ><br>
 			<label for="sem3"><b>Semester 3 </b></label>
-			<input type="text" value=<?php echo $s3 ?> name="sem3" required><br>
+			<input type="number" name="sem3"  min=0 max=100 value=<?php echo $s3 ?> ><br>
 			<label for="sem4"><b>Semester 4 </b></label>
-			<input type="text" value=<?php echo $s4 ?> name="sem4" required><br>
+			<input type="number"  name="sem4" min=0 max=100 value=<?php echo $s4 ?> ><br>
 			<label for="sem5"><b>Semester 5 </b></label>
-			<input type="text" value=<?php echo $s5 ?> name="sem5" required><br>
+			<input type="number"  name="sem5" min=0 max=100 value=<?php echo $s5 ?> ><br>
 			<label for="sem6"><b>Semester 6 </b></label>
-			<input type="text" value=<?php echo $s6 ?> name="sem6" required><br>
+			<input type="number" name="sem6"  min=0 max=100 value=<?php echo $s6 ?> ><br>
 
 			<div class="clearfix">
 			  <button type="submit" class="signupbtn" name="add" >Submit Marks</button>
