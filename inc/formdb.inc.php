@@ -63,5 +63,5 @@
 			$_SESSION['error']="Please enter a valid NIC number";
 			header("location: status.html?pop=yes");	
 		}
-		}}
+		}
 ?>
