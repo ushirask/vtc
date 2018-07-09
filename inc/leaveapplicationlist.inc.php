@@ -12,5 +12,5 @@ $studentIDarray[]=$row;
 
 foreach($studentIDarray as $studentid){
 	$y=$studentid['indexnumber'];
-	echo "<li><a href=\"approve-leave-application.php?sid=$y\">$y</a></li>";
+	echo "<li><a href=\"approve-leave-application.html?sid=$y\">$y</a></li>";
 }

@@ -36,12 +36,12 @@ if(isset($_POST['submit'])){
 				$sql2="UPDATE student_assignments SET assignment_name='$fileName', assignment_path='$fileNameNew' where assignment_id='$assignId' && student_id='$student_id';";
 				mysqli_query($conn,$sql2);
 			}
-			header("Location: ../courses_view.php?id=$course_id");
+			header("Location: ../courses_view.html?id=$course_id");
 		}else{
-			header("Location: ../courses_view.php?id=$course_id");
+			header("Location: ../courses_view.html?id=$course_id");
 		}
 
 	}else{
-		header("Location: ../courses_view.php?id=$course_id");
+		header("Location: ../courses_view.html?id=$course_id");
 	}
 }

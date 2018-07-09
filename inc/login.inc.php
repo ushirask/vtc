@@ -6,13 +6,13 @@
 		 $myusername = $_SESSION['login_user'];
 		 $usertype = $myusername[0];
 		 if($usertype === "L" ){
-					 header("location:lecturer-profile.php");
+					 header("location:lecturer-profile.html");
 		 }else if($usertype === "A" ){
-					 header("location:sectionalHead-profile.php");
+					 header("location:sectionalHead-profile.html");
 		 }else if($usertype === "P" ){
-					 header("location:principal-profile.php");
+					 header("location:principal-profile.html");
 		 }else{
-					header("location:profile.php");
+					header("location:profile.html");
 		 }
 		}
 
@@ -34,18 +34,18 @@
       if($count == 1) {
          $_SESSION['login_user'] = $myusername;
 				 if($usertype === "L" ){
-					 header("location:lecturer-profile.php");
+					 header("location:lecturer-profile.html");
 				}else if($usertype === "A" ){
-					 header("location:sectionalHead-profile.php");
+					 header("location:sectionalHead-profile.html");
 				}else if($usertype === "P" ){
-					 header("location:principal-profile.php");
+					 header("location:principal-profile.html");
 				}else{
-					header("location:profile.php");
+					header("location:profile.html");
 		 }
 			}
       else {
          $_SESSION['error'] = "Your Index Number or Password is invalid";
-		 header("location: status.php?pop=yes");
+		 header("location: status.html?pop=yes");
       }
    }
 ?>

@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 <title>Learn Center | Apply</title>
-<?php include('inc/formdb.php'); ?>
+<?php include('inc/formdb.inc.php'); ?>
 <?php include('inc/header.inc.php'); ?>
+<link rel="stylesheet" type="text/css" href="../css/courses.css">
 <div class="body2">
   <div class="main">
     <!-- content -->
@@ -24,7 +25,7 @@
 			Female<input type="radio" name="gender" value="Female"> <br><br>
 
 			<label for="dob"><b>Date of Birth</b></label><br><br>
-			<input type="date" placeholder="Enter Date of Birth" name="dob" min="1975-01-01" max="2005-12-31" required><br><br>
+			<input type="date" placeholder="Enter Date of Birth" name="dob" min="1985-01-01" max="2005-12-31" required><br><br>
 
 			<label for="nic"><b>NIC number</b></label><br>
 			<input type="text" placeholder="Enter NIC number" name="nic" required><br>
@@ -33,7 +34,7 @@
 			<input type="text" placeholder="Enter Address" name="address" required><br>
 
 			<label for="telephone"><b>Phone Number</b></label><br>
-			<input type="phonenumber" placeholder="Enter Phone Number" name="telephone" required><br>
+			<input type="number" placeholder="Enter Phone Number" name="telephone" required><br>
 
 			<label for="email"><b>Email</b></label><br>
 			<input type="email" placeholder="Enter Email" name="email" required><br>

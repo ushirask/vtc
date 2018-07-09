@@ -3,10 +3,8 @@ $myusername = $_SESSION['login_user'];
 $usertype = $myusername[0];
 $id=$_GET['id'];
 $conn=mysqli_connect('localhost','root','','vtc');
-
 $sql="SELECT * FROM course_material WHERE course_id='$id';";
 $result=mysqli_query($conn,$sql);
-
 $courseMaterialArray=array();
 while($row=mysqli_fetch_assoc($result)){
 	$courseMaterialArray[]=$row;
@@ -33,15 +31,15 @@ while($row=mysqli_fetch_assoc($result)){
 	foreach ($assignmentArray as $assignment) {
 		$assignment_name=$assignment['name'];
 		$assignId=$assignment['assignment_id'];
-		if($usertype === "L" ){
-			echo "<li><a href=\"assignment_view_lecturer.php?assignId=$assignId&courseId=$id\">$assignment_name</a></li>";
-		}else {
-			echo "<li><a href=\"assignment_view.php?assignId=$assignId&courseId=$id\">$assignment_name</a></li>";
-		}
-	}
-
-	if($usertype === "L" ){
-		echo "<li><a href=\"CreateItems.php?courseId=$id\">Create</a></li>";
+		echo "<li><a href=\"assignment_view.html?assignId=$assignId&courseId=$id\">$assignment_name</a></li>";
+	}	
+	
+	if($usertype === "L" ){ 
+		echo "<li><a href=\"CreateItems.html?courseId=$id\">Create</a></li>";
+		echo "<li><a href=\"add-marks.html?courseId=$id\">Add Examination marks</a></li>";
 	}
 	echo "</ul>";
+
+
+
 ?>

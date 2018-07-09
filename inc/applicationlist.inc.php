@@ -12,5 +12,5 @@ while($row = mysqli_fetch_assoc($result)){
 
 foreach($applications_array as $app){
 	$y=$app['nic'];
-	echo "<li><a href=\"approve-applications.php?nic=$y\">$y</a></li>";
+	echo "<li><a href=\"approve-applications.html?nic=$y\">$y</a></li>";
 }

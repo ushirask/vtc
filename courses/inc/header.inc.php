@@ -1,4 +1,4 @@
-<meta ch<meta charset="utf-8">
+<meta charset="utf-8">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/form.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
@@ -21,19 +21,18 @@
       <div class="wrapper">
         <nav>
           <ul id="menu">
-            <li><a href="/vtc">Home</a></li>
-            <li><a href="/vtc/courses.php">Courses</a></li>
-            <!--<li><a href="/vtc/teachers.php">Teachers</a></li>-->
-            <li><a href="/vtc/admissions.php">Apply Now</a></li>
-			      <li><a href="/vtc/profile.php">My Profile</a></li>
-            <li class="end"><a href="/vtc/contacts.php">Contact Us</a></li>
+            <li><a href="/vtc/index.html">Home</a></li>
+            <li><a href="/vtc/courses.html">Courses</a></li>
+            <li><a href="/vtc/admissions.html">Apply Now</a></li>
+			<li><a href="/vtc/profile.html">My Profile</a></li>
+            <li class="end"><a href="/vtc/contacts.html">Contacts</a></li>
           </ul>
         </nav>
       </div>
       <div class="wrapper">
-        <h1><a href="/vtc" id="logo">Learn Center</a></h1>
+        <h1><a href="/vtc/index.html" id="logo">Learn Center</a></h1>
       </div>
-      <div id="slogan"> CodeX Tech <span> Center for Vocational Education</span> </div>
+      <div id="slogan"> CodeX Tech<span>center for vocational education</span> </div>
     </header>
     <!-- / header -->
   </div>

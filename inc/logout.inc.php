@@ -2,6 +2,6 @@
    session_start();
 
    if(session_destroy()) {
-      header("Location: ../login-page.php");
+      header("Location: ../login-page.html");
    }
 ?>

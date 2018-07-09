@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>Learn Center | Courses</title>
-<?php include('inc/header.inc.php'); ?>
+<?php include('../inc/header.inc.php'); ?>
 <link rel="stylesheet" type="text/css" href="../css/courses.css">
 <div class="body2">
   <div class="main">
@@ -37,7 +37,7 @@
                   <td>National Vocational Qualification Certificate - NVQ Level 4</td>
                 </tr>
                 <tr>
-                  <td class="table-course-objective-header" colspan="2"><Strong>Course Objective(Purpose of the Qualification)</Strong></td>
+                  <td class="table-course-objective-header" colspan="2"><Strong>Course Objective(Purpose of the Qualification)</Strong></td>    
                 </tr>
                 <tr>
                   <td class="table-course-objective" colspan="2">To gain knowledge, skills and competencies of a Construction Supervisor, e.g. supervision of construction work in the field of Civil Engineering, managing labour, embarkation of site, quality control in construction, communication with subordinates/supervisors, and safety maintenance.</td>
@@ -45,10 +45,10 @@
               </table>
               <ul class="list-course-content">
                 <li class="course-content-header"><Strong>Course Content</Strong></label>
-
-
+              
+              
                 <li class="course-content">Managing labour</li>
-
+              
                 <li class="course-content">Embarkation of site</li>
                 <li class="course-content">Quality control in construction</li>
                 <li class="course-content">Provide welfare of employees</li>
