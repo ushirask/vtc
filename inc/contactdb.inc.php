@@ -12,9 +12,9 @@ $var=mysqli_query($conn, $sql);
 session_start();
 	if($var){
 		$_SESSION['error']="You have successfully submitted your message";
-		header("location: ../status.php?pop=yes");
+		header("location: ../status.html?pop=yes");
 	}else{
 		$_SESSION['error']="There was an error in submitting your message, please try again later.";
-		header("location: ../status.php?pop=yes");
+		header("location: ../status.html?pop=yes");
 	}
 ?>

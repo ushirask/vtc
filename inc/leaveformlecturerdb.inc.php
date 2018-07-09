@@ -16,11 +16,11 @@ if(isset($_POST['submit'])){
 		if($num1==$num){
 			$sql="INSERT INTO lecturer_leave (id,num,dfrom, dto, reason, principalApproval) VALUES ('$id',  '$num', '$dfrom', '$dto', '$reason','$principalApproval');";
 			mysqli_query($conn, $sql);
-			header("Location: ../lecturer-profile.php?successfull");
+			header("Location: ../lecturer-profile.html?successfull");
 		}else{
-			header("Location: ../lecturer-profile.php?error");
+			header("Location: ../lecturer-profile.html?error");
 		}
 	}else{
-		header("Location: ../lecturer-profile.php?error");
+		header("Location: ../lecturer-profile.html?error");
 	}
 }

@@ -18,12 +18,11 @@ if(isset($_POST['submit'])){
 		if($num1==$num){
 			$sql="INSERT INTO student_leave (indexnumber,course,num,dfrom, dto, reason, sectionalHeadApproval) VALUES ('$indexnumber', '$course', '$num', '$dfrom', '$dto', '$reason','$sectionalHeadApproval');";
 			mysqli_query($conn, $sql);
-			header("Location: ../profile.php?successfull");
+			header("Location: ../profile.html?successfull");
 		}else{
-			header("Location: ../profile.php?error");
+			header("Location: ../profile.html?error");
 		}
 	}else{
-		header("Location: ../profile.php?error");
+		header("Location: ../profile.html?error");
 	}
-	
 }

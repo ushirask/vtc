@@ -22,11 +22,11 @@
         <nav>
           <ul id="menu">
             <li><a href="/vtc">Home</a></li>
-            <li><a href="/vtc/courses.php">Courses</a></li>
-            <!--<li><a href="/vtc/teachers.php">Teachers</a></li>-->
-            <li><a href="/vtc/admissions.php">Apply Now</a></li>
-			      <li><a href="/vtc/profile.php">My Profile</a></li>
-            <li class="end"><a href="/vtc/contacts.php">Contacts</a></li>
+            <li><a href="/vtc/courses.html">Courses</a></li>
+            <!--<li><a href="/vtc/teachers.html">Teachers</a></li>-->
+            <li><a href="/vtc/admissions.html">Apply Now</a></li>
+			      <li><a href="/vtc/profile.html">My Profile</a></li>
+            <li class="end"><a href="/vtc/contacts.html">Contacts</a></li>
           </ul>
         </nav>
       </div>

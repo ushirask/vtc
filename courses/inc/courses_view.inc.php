@@ -31,11 +31,12 @@ while($row=mysqli_fetch_assoc($result)){
 	foreach ($assignmentArray as $assignment) {
 		$assignment_name=$assignment['name'];
 		$assignId=$assignment['assignment_id'];
-		echo "<li><a href=\"assignment_view.php?assignId=$assignId&courseId=$id\">$assignment_name</a></li>";
+		echo "<li><a href=\"assignment_view.html?assignId=$assignId&courseId=$id\">$assignment_name</a></li>";
 	}	
 	
 	if($usertype === "L" ){ 
-		echo "<li><a href=\"CreateItems.php?courseId=$id\">Create</a></li>";
+		echo "<li><a href=\"CreateItems.html?courseId=$id\">Create</a></li>";
+		echo "<li><a href=\"add-marks.html?courseId=$id\">Add Examination marks</a></li>";
 	}
 	echo "</ul>";
 
