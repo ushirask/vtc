@@ -35,6 +35,15 @@
 		}
 		return $result;
 		}
+	
+	//Validate phone number
+	function is_valid_phone($phone){
+		if(strlen($phone)!==10 and strlen($phone)!==7){
+			return false;
+		}else{
+			return true;
+		}
+	}
 
 	if (isset($_POST['apply'])) {
 
@@ -48,7 +57,7 @@
 		$gender=mysqli_real_escape_string($db, $_POST['gender']);
 		$query = "INSERT INTO applications (fname, lname,  telephone,email, nic,address,dob,gender)
 					  VALUES('$fname','$lname', '$telephone','$email', '$nic','$address','$dob','$gender')";
-		if (is_valid_nic($nic)){
+		if ((is_valid_nic($nic)) and (is_valid_phone($telephone))){
 			$var=mysqli_query($db, $query);
 			session_start();
 			if($var){
@@ -60,7 +69,7 @@
 			}
 		}else{
 			session_start();
-			$_SESSION['error']="Please enter a valid NIC number";
+			$_SESSION['error']="Please enter a valid NIC number and a Telephone number";
 			header("location: status.html?pop=yes");	
 		}
 		}
