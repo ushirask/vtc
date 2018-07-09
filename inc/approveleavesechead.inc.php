@@ -5,10 +5,10 @@ if (isset($_POST['approve'])) {
 	$data="Approved";
 	$sql1="UPDATE student_leave SET sectionalHeadApproval = '$data' WHERE indexnumber='$stuid';";
 	mysqli_query($conn,$sql1);
-	header("Location: ../leave-application-list.php?approved");
+	header("Location: ../leave-application-list.html?approved");
 }else if(isset($_POST['reject'])){
 	$data="Rejected";
 	$sql1="UPDATE student_leave SET sectionalHeadApproval = '$data' WHERE indexnumber='$stuid';";
 	mysqli_query($conn,$sql1);
-	header("Location: ../leave-application-list.php?rejected");
+	header("Location: ../leave-application-list.html?rejected");
 }
