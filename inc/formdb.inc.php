@@ -30,9 +30,9 @@
 		session_start();
 		if($var){
 		$_SESSION['error']="You have successfully submitted your application";
-		header("location: status.php?pop=yes");	
+		header("location: status.html?pop=yes");	
 		}else{
 		$_SESSION['error']="There was an error in submitting your application, please use an unique NIC number and an email address.";
-		header("location: status.php?pop=yes");	
+		header("location: status.html?pop=yes");	
 		}}
 ?>

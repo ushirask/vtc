@@ -11,5 +11,5 @@ $sectionalHeadApproval="awaiting";
 if(isset($_POST['submit'])){
 	$sql="INSERT INTO student_leave (indexnumber,course,num_days,dfrom, dto, reason, sectionalHeadApproval) VALUES ('$indexnumber', '$course', '$num_days', '$dfrom', '$dto', '$reason','$sectionalHeadApproval');";
 	mysqli_query($conn, $sql);
-	header("Location: ../profile.php?successfull");
+	header("Location: ../profile.html?successfull");
 }

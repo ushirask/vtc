@@ -9,5 +9,5 @@ if(isset($_POST['grade'])){
 	$sql="UPDATE student_assignments SET  marks='$marks', graded_status=1 where student_id='$student_id'&& assignment_id='$assignId';";
 	mysqli_query($conn, $sql);
 	$result=mysqli_query($conn,$sql);
-	header("Location: ../assignment_view.php?assignId=$assignId&courseId=$courseId");
+	header("Location: ../assignment_view.html?assignId=$assignId&courseId=$courseId");
 }

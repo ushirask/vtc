@@ -23,11 +23,11 @@
 				$result1=mysqli_query($db,$sql1);
 				while($row1 = mysqli_fetch_array($result1,MYSQLI_ASSOC)){
 					$studentid=$row1['studentid'];
-					echo "<li><a href='add-marks-student.php?courseid=$course_id&studentid=$studentid'> $studentid</a></li>";
+					echo "<li><a href='add-marks-student.html?courseid=$course_id&studentid=$studentid'> $studentid</a></li>";
 				}
            }
           
-          else{header("login-page.php");}?>
+          else{header("login-page.html");}?>
 
           </article>
         </div>

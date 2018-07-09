@@ -25,6 +25,6 @@
 		
 		$sql2="UPDATE student_courses SET s1='$sem1',s2='$sem2',s3='$sem3',s4='$sem4',s5='$sem5',s6='$sem6' WHERE (studentid='$studentid' AND courseid='$courseid')";
 		$result2= mysqli_query($db,$sql2);		
-		header("location:add-marks.php?courseId=$courseid");
+		header("location:add-marks.html?courseId=$courseid");
 	}
 ?>

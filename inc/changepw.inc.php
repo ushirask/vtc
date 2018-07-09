@@ -23,12 +23,12 @@
 		 mysqli_query($db,$sql1);
 		 session_start();
 		 $_SESSION['error'] = "Password successfully changed";
-		 header("location:status.php?pop=yes");
+		 header("location:status.html?pop=yes");
 	  }
       else {
 		  session_start();
          $_SESSION['error'] ="Your old password was incorrect";
-		 header("location:status.php?pop=yes");
+		 header("location:status.html?pop=yes");
       }
    }
 ?>
